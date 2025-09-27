@@ -1,0 +1,1240 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "https://w3id.org/circularfactory/ManipulationSystem", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/circularfactory/Core", "https://w3id.org/circularfactory/IntralogisticSystem", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1" ],
+    "title" : {
+      "undefined" : "The Manipulation System Ontology"
+    },
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "version" : "1.1.1",
+    "author" : [ "https://orcid.org/0000-0003-3544-8203", "https://orcid.org/0009-0007-3713-7739", "https://orcid.org/0000-0002-3704-9567" ],
+    "labels" : {
+      "undefined" : "Manipulation System Ontology"
+    },
+    "comments" : {
+      "undefined" : "The Manipulation System Ontology defines concepts and relations that describe the structure, behavior, interactions and capabilities of the manipulator module which is part of the intralogistics system developed in the CRC 1574."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0009-0007-3713-7739",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0000-0003-3544-8203",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0000-0002-3704-9567",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-09-25",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.1.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "The Manipulation System Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#ObjectDetector",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObjectDetector",
+      "undefined" : "Object Detector"
+    },
+    "comment" : {
+      "undefined" : "Vision part of grasp learning system responsible for object detection."
+    },
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#Location",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Location"
+    },
+    "subClasses" : [ "5", "6", "7" ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#RobotGripper",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RobotGripper",
+      "undefined" : "RobotGripper"
+    },
+    "id" : "8",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#Resource",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Resource"
+    },
+    "subClasses" : [ "10", "11", "8", "12", "13", "14" ],
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RobotGripperTrajectory"
+    },
+    "comment" : {
+      "undefined" : "A trajectory is an ordered list where all members are GripperPoses."
+    },
+    "id" : "15",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#Data",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Data",
+      "undefined" : "Data"
+    },
+    "subClasses" : [ "1", "18" ],
+    "comment" : {
+      "undefined" : "A generic data class, that will be more detailed in the future to handle specific and different data types and uncertainties"
+    },
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#Manipulator",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Manipulator",
+      "undefined" : "Manipulator"
+    },
+    "id" : "13",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#GraspLearningSystem",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GraspLearningSystem",
+      "undefined" : "Grasp Learning System"
+    },
+    "comment" : {
+      "undefined" : "The whole machine learning based system for grasp prediction and training"
+    },
+    "id" : "11",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#MotionPlanner",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MotionPlanner",
+      "undefined" : "Motion Planner"
+    },
+    "comment" : {
+      "undefined" : "Plans a trajectory between an initial gripper pose and a predicted target gripper pose. The initial gripper pose can be the current pose of the gripper or another predicted gripper pose"
+    },
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#RobotArm",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RobotArm",
+      "undefined" : "RobotArm"
+    },
+    "id" : "12",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#Environment",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Environment",
+      "undefined" : "Environment"
+    },
+    "subClasses" : [ "25", "28" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/IntralogisticSystem#ManipulationTask",
+    "baseIri" : "https://w3id.org/circularfactory/IntralogisticSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ManipulationTask"
+    },
+    "attributes" : [ "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#TrainingSystem",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrainingSystem",
+      "undefined" : "Training System"
+    },
+    "comment" : {
+      "undefined" : "Architecture for training neural network model."
+    },
+    "id" : "39"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#DataBuffer",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataBuffer",
+      "undefined" : "Data Buffer"
+    },
+    "comment" : {
+      "undefined" : "The data buffer contains data in a systematic way, for the grasping system to use as training data and to predict grasps/trajectories. It will be more detailed in the future to deal with uncertainty and other different processing steps."
+    },
+    "id" : "10",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#TargetGripperPose",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TargetGripperPose",
+      "undefined" : "Gripper Pose"
+    },
+    "comment" : {
+      "undefined" : "A prediction of a gripper pose, as for example a result of a neural network grasp prediction model."
+    },
+    "id" : "34",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "List"
+    },
+    "subClasses" : [ "15" ],
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "individuals" : [ {
+      "iri" : "https://orcid.org/0000-0003-3544-8203",
+      "baseIri" : "https://orcid.org",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "Rosa Petra Wolf",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "0000-0003-3544-8203"
+      }
+    }, {
+      "iri" : "https://orcid.org/0009-0007-3713-7739",
+      "baseIri" : "https://orcid.org",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "Yitian Shi",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "0009-0007-3713-7739"
+      }
+    }, {
+      "iri" : "https://orcid.org/0000-0002-3704-9567",
+      "baseIri" : "https://orcid.org",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "undefined",
+          "value" : "Jan-Felix Klein",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "0000-0002-3704-9567"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#GripperPose",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GripperPose",
+      "undefined" : "Gripper Pose"
+    },
+    "subClasses" : [ "34" ],
+    "comment" : {
+      "undefined" : "A GripperPose consists of gripper position, a gripper orientation and a gripper aperture."
+    },
+    "id" : "20"
+  }, {
+    "instances" : 0,
+    "union" : [ "3", "10", "48", "24", "39", "47" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#Sensor",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sensor"
+    },
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#Component",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Component"
+    },
+    "attributes" : [ "external" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#SensorData",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SensorData",
+      "undefined" : "Sensor Data"
+    },
+    "id" : "18",
+    "superClasses" : [ "17", "50" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#RobotData",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RobotData",
+      "undefined" : "Robot Data"
+    },
+    "comment" : {
+      "undefined" : "Prorioceptive data from a robot, such as joint configurations"
+    },
+    "id" : "1",
+    "superClasses" : [ "17", "50" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#Workspace",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Workspace",
+      "undefined" : "Workspace"
+    },
+    "comment" : {
+      "undefined" : "Operational area within an Environment"
+    },
+    "id" : "6",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#Position",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Position",
+      "undefined" : "3D Position"
+    },
+    "comment" : {
+      "undefined" : "3D position coordinate of the gripper (end-effector). "
+    },
+    "id" : "7",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#PostProcessingUnit",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PostProcessingUnit",
+      "undefined" : "Post processing unit"
+    },
+    "comment" : {
+      "undefined" : "A system to post process predictions from the neural network, such as scaling, or coordinate frame transformation."
+    },
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/IntralogisticSystem#ManipulatorModule",
+    "baseIri" : "https://w3id.org/circularfactory/IntralogisticSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ManipulatorModule"
+    },
+    "attributes" : [ "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#RealWorldEnvironment",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RealWorldEnvironment",
+      "undefined" : "Real World Environment"
+    },
+    "id" : "28",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#RobotSensor",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RobotSensor",
+      "undefined" : "RobotSensor"
+    },
+    "id" : "14",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#GripperAperture",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GripperAperture",
+      "undefined" : "Gripper Aperture"
+    },
+    "comment" : {
+      "undefined" : "Distance between the gripper fingers/jaws."
+    },
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#Orientation",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Orientation",
+      "undefined" : "Orientation"
+    },
+    "comment" : {
+      "undefined" : "Orientation of the gripper (end-effector)"
+    },
+    "id" : "5",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#NeuralNetworkModel",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NeuralNetworkModel",
+      "undefined" : "Neural Network Model"
+    },
+    "id" : "48"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#SimulationSystem",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SimulationSystem",
+      "undefined" : "Simulation System"
+    },
+    "comment" : {
+      "undefined" : "Interface to simulation environmnet."
+    },
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#SimulationEnvironment",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SimulationEnvironment",
+      "undefined" : "Simulation Environment"
+    },
+    "id" : "25",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#RobotArmState",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RobotArmState",
+      "undefined" : "RobotArm State"
+    },
+    "comment" : {
+      "undefined" : "Current joint angles of the robotic arm."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#Measurement",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Measurement"
+    },
+    "subClasses" : [ "1", "18" ],
+    "attributes" : [ "external" ],
+    "id" : "50"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#containsRobotArmState",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "containsRobotArmState",
+      "undefined" : "contains robot arm state"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "A Robot Data instance contains the current state of the robotic arm."
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#containsGripperAperture",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "containsGripperAperture",
+      "undefined" : "contains gripper state"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Associates a GripperPose with a gripper state."
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#createsSimEnvironment",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "createsSimEnvironment",
+      "undefined" : "creates simulation environmemt"
+    },
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "A simulation system creates a simulation environment."
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#hasRobotGripper",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasRobotGripper",
+      "undefined" : "has robot gripper"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "Manipulator is equipped with a robotic gripper."
+    },
+    "attributes" : [ "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#containsOrientation",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "containsOrientation",
+      "undefined" : "contains pose"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Associates a GripperPose with its spatial pose component."
+    },
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#processesData",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "processesData",
+      "undefined" : "proecesses Data"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "The Data Buffer contains data and processes data, e.g. weighting data, filtering data, labeling data"
+    },
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "hasSubSystem",
+      "undefined" : "has sub system"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "A grasp learning system can contain different components, such as object detection, simulation, training, nerual networks, and data buffer."
+    },
+    "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#hasTargetGripperPose",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasTargetGripperPose",
+      "undefined" : "has target gripper pose"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "A motion planner gets a target gripper pose, as the target pose of the trajectory."
+    },
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#hasGripperPose",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasGripperPose",
+      "undefined" : "has gripper pose"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "A gripper has a pose (position, orientation, gripper aperture)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#hasManipulator",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasManipulator",
+      "undefined" : "has manipulator"
+    },
+    "domain" : "37",
+    "comment" : {
+      "undefined" : "Manipulator Module is equipped with a manipulator."
+    },
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#locates",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "locates",
+      "undefined" : "is located by"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "The target object or location of a manipulation task is located by an object detection system."
+    },
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#capturesSensorData",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "capturesSensorData",
+      "undefined" : "captures sensor data"
+    },
+    "domain" : "43",
+    "attributes" : [ "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#hasRobotArmState",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasRobotArmState",
+      "undefined" : "has robot arm state"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "A robotic arm has specific joint configurations."
+    },
+    "attributes" : [ "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#generatesTrajectory",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "generatesTrajectory",
+      "undefined" : "generates trajectory"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "A motion planner plans a trajectory between an initial and a target gripper pose."
+    },
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#processesPredictions",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "processesPredictions",
+      "undefined" : "processes predictions"
+    },
+    "domain" : "47",
+    "comment" : {
+      "undefined" : "The post processing system processes prediction before passing them on."
+    },
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "range" : "50",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "range" : "20",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
+  }, {
+    "range" : "50",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "range" : "27",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "range" : "17",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "27",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "9",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "17",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "9",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#generatesGripperPose",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "generatesGripperPose",
+      "undefined" : "generates gripper pose"
+    },
+    "domain" : "47",
+    "comment" : {
+      "undefined" : "The post processing unit generates the processed gripper pose prediction."
+    },
+    "attributes" : [ "object" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#executesTrajectory",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "executesTrajectory",
+      "undefined" : "executes trajectory"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "The manipulator executes the trajectory."
+    },
+    "attributes" : [ "object" ],
+    "id" : "62"
+  }, {
+    "range" : "4",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "63"
+  }, {
+    "range" : "4",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "range" : "4",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "range" : "9",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
+  }, {
+    "range" : "9",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "68"
+  }, {
+    "range" : "9",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#hasRobotArm",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasRobotArm",
+      "undefined" : "has robot arm"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "A Manipulator has a robot arm."
+    },
+    "attributes" : [ "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#hasInitialGripperPose",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasInitialGripperPose",
+      "undefined" : "has initial gripper pose"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "A motion planner gets an initial gripper pose, as the starting pose of the trajectory."
+    },
+    "attributes" : [ "object" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#hasMotionPlanner",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasMotionPlanner",
+      "undefined" : "has motion planner"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "Manipulator has a Motion Planner to calculate control signals."
+    },
+    "attributes" : [ "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "first"
+    },
+    "domain" : "15",
+    "attributes" : [ "allValues", "external", "object" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#containsGripperPose",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "containsGripperPose",
+      "undefined" : "contains gripper pose"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "A Robot Data instance contains the current pose of the gripper."
+    },
+    "attributes" : [ "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "rest"
+    },
+    "domain" : "15",
+    "attributes" : [ "allValues", "external", "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#containsPosition",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "containsPosition",
+      "undefined" : "contains pose"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Associates a GripperPose with its spatial pose component."
+    },
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#hasSensor",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "hasSensor",
+      "undefined" : "has sensor"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "Manipulator is equipped with a sensor."
+    },
+    "attributes" : [ "object" ],
+    "id" : "77"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#trains",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "trains",
+      "undefined" : "trains"
+    },
+    "domain" : "39",
+    "attributes" : [ "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#hasWorkspace",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasWorkspace",
+      "undefined" : "has workspace"
+    },
+    "domain" : "38",
+    "comment" : {
+      "undefined" : "Every manipulation task from the intralogistics system has a defined workspace, in which the target component is located and grasped."
+    },
+    "attributes" : [ "object" ],
+    "id" : "79"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#interactsWith",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "interactsWith",
+      "undefined" : "interacts with"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "The robot manipulator moves in the environment and manipulates objects in the environment"
+    },
+    "attributes" : [ "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#generatesGripperTrajectory",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "generatesGripperTrajectory",
+      "undefined" : "generates gripper trajectory"
+    },
+    "domain" : "47",
+    "comment" : {
+      "undefined" : "The post processing unit generates the processed trajectory of the gripper."
+    },
+    "attributes" : [ "object" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#constraintsEnvironment",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "constraintsEnvironment",
+      "undefined" : "constraints environment"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Workspace defines operational boundaries within an environment"
+    },
+    "attributes" : [ "object" ],
+    "id" : "82"
+  } ]
+}
