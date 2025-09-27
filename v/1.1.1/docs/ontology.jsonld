@@ -1,0 +1,815 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#GripperPose"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://orcid.org/0000-0002-3704-9567",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Jan-Felix Klein"
+  } ]
+}, {
+  "@id" : "https://orcid.org/0000-0003-3544-8203",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Rosa Petra Wolf"
+  } ]
+}, {
+  "@id" : "https://orcid.org/0009-0007-3713-7739",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Yitian Shi"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/Core#Component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/Core#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/Core#Measurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/Core#Resource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/IntralogisticSystem#ManipulationTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/IntralogisticSystem#ManipulatorModule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-09-25"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://orcid.org/0000-0002-3704-9567"
+  }, {
+    "@id" : "https://orcid.org/0000-0003-3544-8203"
+  }, {
+    "@id" : "https://orcid.org/0009-0007-3713-7739"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "The Manipulation System Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Manipulation System Ontology defines concepts and relations that describe the structure, behavior, interactions and capabilities of the manipulator module which is part of the intralogistics system developed in the CRC 1574."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Manipulation System Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/circularfactory/Core"
+  }, {
+    "@id" : "https://w3id.org/circularfactory/IntralogisticSystem"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem/1.1.1"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.1.1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A generic data class, that will be more detailed in the future to handle specific and different data types and uncertainties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#DataBuffer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The data buffer contains data in a systematic way, for the grasping system to use as training data and to predict grasps/trajectories. It will be more detailed in the future to deal with uncertainty and other different processing steps."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data Buffer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/circularfactory/Core#Resource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Environment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Environment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#GraspLearningSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The whole machine learning based system for grasp prediction and training"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Grasp Learning System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/circularfactory/Core#Resource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#GripperAperture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Distance between the gripper fingers/jaws."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Gripper Aperture"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#GripperPose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A GripperPose consists of gripper position, a gripper orientation and a gripper aperture."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Gripper Pose"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Manipulator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Manipulator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/circularfactory/Core#Resource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#MotionPlanner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Plans a trajectory between an initial gripper pose and a predicted target gripper pose. The initial gripper pose can be the current pose of the gripper or another predicted gripper pose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Motion Planner"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#NeuralNetworkModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Neural Network Model"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#ObjectDetector",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Vision part of grasp learning system responsible for object detection."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Object Detector"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Orientation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Orientation of the gripper (end-effector)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Orientation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/circularfactory/Core#Location"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Position",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "3D position coordinate of the gripper (end-effector). "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "3D Position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/circularfactory/Core#Location"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#PostProcessingUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A system to post process predictions from the neural network, such as scaling, or coordinate frame transformation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Post processing unit"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#RealWorldEnvironment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Real World Environment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Environment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#RobotArm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RobotArm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/circularfactory/Core#Resource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#RobotArmState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Current joint angles of the robotic arm."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RobotArm State"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#RobotData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Prorioceptive data from a robot, such as joint configurations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Robot Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/circularfactory/Core#Measurement"
+  }, {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Data"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#RobotGripper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RobotGripper"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/circularfactory/Core#Resource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A trajectory is an ordered list where all members are GripperPoses."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+  }, {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#RobotSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RobotSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/circularfactory/Core#Resource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#SensorData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sensor Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/circularfactory/Core#Measurement"
+  }, {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Data"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#SimulationEnvironment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Simulation Environment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Environment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#SimulationSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Interface to simulation environmnet."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Simulation System"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#TargetGripperPose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A prediction of a gripper pose, as for example a result of a neural network grasp prediction model."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Gripper Pose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#GripperPose"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#TrainingSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Architecture for training neural network model."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Training System"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Workspace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Operational area within an Environment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Workspace"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/circularfactory/Core#Location"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#capturesSensorData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "captures sensor data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#SensorData"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#constraintsEnvironment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Workspace defines operational boundaries within an environment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Workspace"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "constraints environment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Environment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#containsGripperAperture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Associates a GripperPose with a gripper state."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#GripperPose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contains gripper state"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#GripperAperture"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#containsGripperPose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Robot Data instance contains the current pose of the gripper."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#RobotData"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contains gripper pose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#GripperPose"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#containsOrientation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Associates a GripperPose with its spatial pose component."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#GripperPose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contains pose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Orientation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#containsPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Associates a GripperPose with its spatial pose component."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#GripperPose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contains pose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Position"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#containsRobotArmState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Robot Data instance contains the current state of the robotic arm."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#RobotData"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contains robot arm state"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#RobotArmState"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#createsSimEnvironment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A simulation system creates a simulation environment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#SimulationSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "creates simulation environmemt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#SimulationEnvironment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#executesTrajectory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The manipulator executes the trajectory."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Manipulator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "executes trajectory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#generatesGripperPose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The post processing unit generates the processed gripper pose prediction."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#PostProcessingUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "generates gripper pose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#TargetGripperPose"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#generatesGripperTrajectory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The post processing unit generates the processed trajectory of the gripper."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#PostProcessingUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "generates gripper trajectory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#generatesTrajectory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A motion planner plans a trajectory between an initial and a target gripper pose."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#MotionPlanner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "generates trajectory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#hasGripperPose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A gripper has a pose (position, orientation, gripper aperture)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#RobotGripper"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has gripper pose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#GripperPose"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#hasInitialGripperPose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A motion planner gets an initial gripper pose, as the starting pose of the trajectory."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#MotionPlanner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has initial gripper pose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#GripperPose"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#hasManipulator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Manipulator Module is equipped with a manipulator."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/IntralogisticSystem#ManipulatorModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has manipulator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Manipulator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#hasMotionPlanner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Manipulator has a Motion Planner to calculate control signals."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Manipulator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has motion planner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#MotionPlanner"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#hasRobotArm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Manipulator has a robot arm."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Manipulator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has robot arm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#RobotArm"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#hasRobotArmState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A robotic arm has specific joint configurations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#RobotArm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has robot arm state"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#RobotArmState"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#hasRobotGripper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Manipulator is equipped with a robotic gripper."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Manipulator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has robot gripper"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#RobotGripper"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#hasSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Manipulator is equipped with a sensor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Manipulator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A grasp learning system can contain different components, such as object detection, simulation, training, nerual networks, and data buffer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#GraspLearningSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has sub system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#DataBuffer"
+  }, {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#NeuralNetworkModel"
+  }, {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#ObjectDetector"
+  }, {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#PostProcessingUnit"
+  }, {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#SimulationSystem"
+  }, {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#TrainingSystem"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#hasTargetGripperPose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A motion planner gets a target gripper pose, as the target pose of the trajectory."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#MotionPlanner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has target gripper pose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#TargetGripperPose"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#hasWorkspace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Every manipulation task from the intralogistics system has a defined workspace, in which the target component is located and grasped."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/IntralogisticSystem#ManipulationTask"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has workspace"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Workspace"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#interactsWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The robot manipulator moves in the environment and manipulates objects in the environment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Manipulator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "interacts with"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Environment"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#locates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The target object or location of a manipulation task is located by an object detection system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#ObjectDetector"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is located by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/Core#Component"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#processesData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Data Buffer contains data and processes data, e.g. weighting data, filtering data, labeling data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#DataBuffer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "proecesses Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#Data"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#processesPredictions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The post processing system processes prediction before passing them on."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#PostProcessingUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "processes predictions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#NeuralNetworkModel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/circularfactory/ManipulationSystem#trains",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#TrainingSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "trains"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/circularfactory/ManipulationSystem#NeuralNetworkModel"
+  } ]
+} ]

@@ -1,0 +1,1311 @@
+<h2 id="crossreference" class="list">Cross-reference for Manipulation System Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Manipulation System Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#Position" title="https://w3id.org/circularfactory/ManipulationSystem#Position">3D Position</a></li>
+  <li><a href="#Data" title="https://w3id.org/circularfactory/ManipulationSystem#Data">Data</a></li>
+  <li><a href="#DataBuffer" title="https://w3id.org/circularfactory/ManipulationSystem#DataBuffer">Data Buffer</a></li>
+  <li><a href="#Environment" title="https://w3id.org/circularfactory/ManipulationSystem#Environment">Environment</a></li>
+  <li><a href="#GraspLearningSystem" title="https://w3id.org/circularfactory/ManipulationSystem#GraspLearningSystem">Grasp Learning System</a></li>
+  <li><a href="#GripperAperture" title="https://w3id.org/circularfactory/ManipulationSystem#GripperAperture">Gripper Aperture</a></li>
+  <li><a href="#GripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#GripperPose">Gripper Pose</a></li>
+  <li><a href="#TargetGripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#TargetGripperPose">Gripper Pose</a></li>
+  <li><a href="#Manipulator" title="https://w3id.org/circularfactory/ManipulationSystem#Manipulator">Manipulator</a></li>
+  <li><a href="#MotionPlanner" title="https://w3id.org/circularfactory/ManipulationSystem#MotionPlanner">Motion Planner</a></li>
+  <li><a href="#NeuralNetworkModel" title="https://w3id.org/circularfactory/ManipulationSystem#NeuralNetworkModel">Neural Network Model</a></li>
+  <li><a href="#ObjectDetector" title="https://w3id.org/circularfactory/ManipulationSystem#ObjectDetector">Object Detector</a></li>
+  <li><a href="#Orientation" title="https://w3id.org/circularfactory/ManipulationSystem#Orientation">Orientation</a></li>
+  <li><a href="#PostProcessingUnit" title="https://w3id.org/circularfactory/ManipulationSystem#PostProcessingUnit">Post processing unit</a></li>
+  <li><a href="#RealWorldEnvironment" title="https://w3id.org/circularfactory/ManipulationSystem#RealWorldEnvironment">Real World Environment</a></li>
+  <li><a href="#RobotData" title="https://w3id.org/circularfactory/ManipulationSystem#RobotData">Robot Data</a></li>
+  <li><a href="#RobotGripperTrajectory" title="https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory"> <span>Robot Gripper Trajectory</span> </a></li>
+  <li><a href="#RobotArm" title="https://w3id.org/circularfactory/ManipulationSystem#RobotArm">RobotArm</a></li>
+  <li><a href="#RobotArmState" title="https://w3id.org/circularfactory/ManipulationSystem#RobotArmState">RobotArm State</a></li>
+  <li><a href="#RobotGripper" title="https://w3id.org/circularfactory/ManipulationSystem#RobotGripper">RobotGripper</a></li>
+  <li><a href="#RobotSensor" title="https://w3id.org/circularfactory/ManipulationSystem#RobotSensor">RobotSensor</a></li>
+  <li><a href="#SensorData" title="https://w3id.org/circularfactory/ManipulationSystem#SensorData">Sensor Data</a></li>
+  <li><a href="#SimulationEnvironment" title="https://w3id.org/circularfactory/ManipulationSystem#SimulationEnvironment">Simulation Environment</a></li>
+  <li><a href="#SimulationSystem" title="https://w3id.org/circularfactory/ManipulationSystem#SimulationSystem">Simulation System</a></li>
+  <li><a href="#TrainingSystem" title="https://w3id.org/circularfactory/ManipulationSystem#TrainingSystem">Training System</a></li>
+  <li><a href="#Workspace" title="https://w3id.org/circularfactory/ManipulationSystem#Workspace">Workspace</a></li>
+ </ul>
+ <div class="entity" id="Position">
+  <h3>3D Position<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#Position</p>
+  <div class="comment">
+   <span class="markdown">3D position coordinate of the gripper (end-effector). </span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/circularfactory/Core#Location" target="_blank" title="https://w3id.org/circularfactory/Core#Location">Location</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#containsPosition" title="https://w3id.org/circularfactory/ManipulationSystem#containsPosition">contains pose</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Data">
+  <h3>Data<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#Data</p>
+  <div class="comment">
+   <span class="markdown">A generic data class, that will be more detailed in the future to handle specific and different data types and uncertainties</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#RobotData" title="https://w3id.org/circularfactory/ManipulationSystem#RobotData">Robot Data</a> <sup class="type-c" title="class">c</sup>, <a href="#SensorData" title="https://w3id.org/circularfactory/ManipulationSystem#SensorData">Sensor Data</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#processesData" title="https://w3id.org/circularfactory/ManipulationSystem#processesData">proecesses Data</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DataBuffer">
+  <h3>Data Buffer<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#DataBuffer</p>
+  <div class="comment">
+   <span class="markdown">The data buffer contains data in a systematic way, for the grasping system to use as training data and to predict grasps/trajectories. It will be more detailed in the future to deal with uncertainty and other different processing steps.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/circularfactory/Core#Resource" target="_blank" title="https://w3id.org/circularfactory/Core#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#processesData" title="https://w3id.org/circularfactory/ManipulationSystem#processesData">proecesses Data</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasSubSystem" title="https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem">has sub system</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Environment">
+  <h3>Environment<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#Environment</p>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#RealWorldEnvironment" title="https://w3id.org/circularfactory/ManipulationSystem#RealWorldEnvironment">Real World Environment</a> <sup class="type-c" title="class">c</sup>, <a href="#SimulationEnvironment" title="https://w3id.org/circularfactory/ManipulationSystem#SimulationEnvironment">Simulation Environment</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#constraintsEnvironment" title="https://w3id.org/circularfactory/ManipulationSystem#constraintsEnvironment">constraints environment</a> <sup class="type-op" title="object property">op</sup>, <a href="#interactsWith" title="https://w3id.org/circularfactory/ManipulationSystem#interactsWith">interacts with</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="GraspLearningSystem">
+  <h3>Grasp Learning System<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#GraspLearningSystem</p>
+  <div class="comment">
+   <span class="markdown">The whole machine learning based system for grasp prediction and training</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/circularfactory/Core#Resource" target="_blank" title="https://w3id.org/circularfactory/Core#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasSubSystem" title="https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem">has sub system</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="GripperAperture">
+  <h3>Gripper Aperture<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#GripperAperture</p>
+  <div class="comment">
+   <span class="markdown">Distance between the gripper fingers/jaws.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#containsGripperAperture" title="https://w3id.org/circularfactory/ManipulationSystem#containsGripperAperture">contains gripper state</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="GripperPose">
+  <h3>Gripper Pose<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#GripperPose</p>
+  <div class="comment">
+   <span class="markdown">A GripperPose consists of gripper position, a gripper orientation and a gripper aperture.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#TargetGripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#TargetGripperPose">Gripper Pose</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#containsGripperAperture" title="https://w3id.org/circularfactory/ManipulationSystem#containsGripperAperture">contains gripper state</a> <sup class="type-op" title="object property">op</sup>, <a href="#containsOrientation" title="https://w3id.org/circularfactory/ManipulationSystem#containsOrientation">contains pose</a> <sup class="type-op" title="object property">op</sup>, <a href="#containsPosition" title="https://w3id.org/circularfactory/ManipulationSystem#containsPosition">contains pose</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#containsGripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#containsGripperPose">contains gripper pose</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasGripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#hasGripperPose">has gripper pose</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasInitialGripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#hasInitialGripperPose">has initial gripper pose</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="TargetGripperPose">
+  <h3>Gripper Pose<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#TargetGripperPose</p>
+  <div class="comment">
+   <span class="markdown">A prediction of a gripper pose, as for example a result of a neural network grasp prediction model.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#GripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#GripperPose">Gripper Pose</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#generatesGripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#generatesGripperPose">generates gripper pose</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasTargetGripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#hasTargetGripperPose">has target gripper pose</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Manipulator">
+  <h3>Manipulator<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#Manipulator</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/circularfactory/Core#Resource" target="_blank" title="https://w3id.org/circularfactory/Core#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#executesTrajectory" title="https://w3id.org/circularfactory/ManipulationSystem#executesTrajectory">executes trajectory</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasMotionPlanner" title="https://w3id.org/circularfactory/ManipulationSystem#hasMotionPlanner">has motion planner</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasRobotArm" title="https://w3id.org/circularfactory/ManipulationSystem#hasRobotArm">has robot arm</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasRobotGripper" title="https://w3id.org/circularfactory/ManipulationSystem#hasRobotGripper">has robot gripper</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasSensor" title="https://w3id.org/circularfactory/ManipulationSystem#hasSensor">has sensor</a> <sup class="type-op" title="object property">op</sup>, <a href="#interactsWith" title="https://w3id.org/circularfactory/ManipulationSystem#interactsWith">interacts with</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasManipulator" title="https://w3id.org/circularfactory/ManipulationSystem#hasManipulator">has manipulator</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MotionPlanner">
+  <h3>Motion Planner<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#MotionPlanner</p>
+  <div class="comment">
+   <span class="markdown">Plans a trajectory between an initial gripper pose and a predicted target gripper pose. The initial gripper pose can be the current pose of the gripper or another predicted gripper pose</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#generatesTrajectory" title="https://w3id.org/circularfactory/ManipulationSystem#generatesTrajectory">generates trajectory</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasInitialGripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#hasInitialGripperPose">has initial gripper pose</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasTargetGripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#hasTargetGripperPose">has target gripper pose</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasMotionPlanner" title="https://w3id.org/circularfactory/ManipulationSystem#hasMotionPlanner">has motion planner</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="NeuralNetworkModel">
+  <h3>Neural Network Model<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#NeuralNetworkModel</p>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasSubSystem" title="https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem">has sub system</a> <sup class="type-op" title="object property">op</sup>, <a href="#processesPredictions" title="https://w3id.org/circularfactory/ManipulationSystem#processesPredictions">processes predictions</a> <sup class="type-op" title="object property">op</sup>, <a href="#trains" title="https://w3id.org/circularfactory/ManipulationSystem#trains">trains</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ObjectDetector">
+  <h3>Object Detector<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#ObjectDetector</p>
+  <div class="comment">
+   <span class="markdown">Vision part of grasp learning system responsible for object detection.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#locates" title="https://w3id.org/circularfactory/ManipulationSystem#locates">is located by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasSubSystem" title="https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem">has sub system</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Orientation">
+  <h3>Orientation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#Orientation</p>
+  <div class="comment">
+   <span class="markdown">Orientation of the gripper (end-effector)</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/circularfactory/Core#Location" target="_blank" title="https://w3id.org/circularfactory/Core#Location">Location</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#containsOrientation" title="https://w3id.org/circularfactory/ManipulationSystem#containsOrientation">contains pose</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="PostProcessingUnit">
+  <h3>Post processing unit<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#PostProcessingUnit</p>
+  <div class="comment">
+   <span class="markdown">A system to post process predictions from the neural network, such as scaling, or coordinate frame transformation.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#generatesGripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#generatesGripperPose">generates gripper pose</a> <sup class="type-op" title="object property">op</sup>, <a href="#generatesGripperTrajectory" title="https://w3id.org/circularfactory/ManipulationSystem#generatesGripperTrajectory">generates gripper trajectory</a> <sup class="type-op" title="object property">op</sup>, <a href="#processesPredictions" title="https://w3id.org/circularfactory/ManipulationSystem#processesPredictions">processes predictions</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasSubSystem" title="https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem">has sub system</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RealWorldEnvironment">
+  <h3>Real World Environment<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#RealWorldEnvironment</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Environment" title="https://w3id.org/circularfactory/ManipulationSystem#Environment">Environment</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RobotData">
+  <h3>Robot Data<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#RobotData</p>
+  <div class="comment">
+   <span class="markdown">Prorioceptive data from a robot, such as joint configurations</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Data" title="https://w3id.org/circularfactory/ManipulationSystem#Data">Data</a> <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/circularfactory/Core#Measurement" target="_blank" title="https://w3id.org/circularfactory/Core#Measurement">Measurement</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#containsGripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#containsGripperPose">contains gripper pose</a> <sup class="type-op" title="object property">op</sup>, <a href="#containsRobotArmState" title="https://w3id.org/circularfactory/ManipulationSystem#containsRobotArmState">contains robot arm state</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RobotGripperTrajectory">
+  <h3>Robot Gripper Trajectory<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory</p>
+  <div class="comment">
+   <span class="markdown">A trajectory is an ordered list where all members are GripperPoses.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#List" target="_blank" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">List</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#executesTrajectory" title="https://w3id.org/circularfactory/ManipulationSystem#executesTrajectory">executes trajectory</a> <sup class="type-op" title="object property">op</sup>, <a href="#generatesGripperTrajectory" title="https://w3id.org/circularfactory/ManipulationSystem#generatesGripperTrajectory">generates gripper trajectory</a> <sup class="type-op" title="object property">op</sup>, <a href="#generatesTrajectory" title="https://w3id.org/circularfactory/ManipulationSystem#generatesTrajectory">generates trajectory</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RobotArm">
+  <h3>RobotArm<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#RobotArm</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/circularfactory/Core#Resource" target="_blank" title="https://w3id.org/circularfactory/Core#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasRobotArmState" title="https://w3id.org/circularfactory/ManipulationSystem#hasRobotArmState">has robot arm state</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasRobotArm" title="https://w3id.org/circularfactory/ManipulationSystem#hasRobotArm">has robot arm</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RobotArmState">
+  <h3>RobotArm State<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#RobotArmState</p>
+  <div class="comment">
+   <span class="markdown">Current joint angles of the robotic arm.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#containsRobotArmState" title="https://w3id.org/circularfactory/ManipulationSystem#containsRobotArmState">contains robot arm state</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasRobotArmState" title="https://w3id.org/circularfactory/ManipulationSystem#hasRobotArmState">has robot arm state</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RobotGripper">
+  <h3>RobotGripper<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#RobotGripper</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/circularfactory/Core#Resource" target="_blank" title="https://w3id.org/circularfactory/Core#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasGripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#hasGripperPose">has gripper pose</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasRobotGripper" title="https://w3id.org/circularfactory/ManipulationSystem#hasRobotGripper">has robot gripper</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RobotSensor">
+  <h3>RobotSensor<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#RobotSensor</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/circularfactory/Core#Resource" target="_blank" title="https://w3id.org/circularfactory/Core#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SensorData">
+  <h3>Sensor Data<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#SensorData</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Data" title="https://w3id.org/circularfactory/ManipulationSystem#Data">Data</a> <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/circularfactory/Core#Measurement" target="_blank" title="https://w3id.org/circularfactory/Core#Measurement">Measurement</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#capturesSensorData" title="https://w3id.org/circularfactory/ManipulationSystem#capturesSensorData">captures sensor data</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SimulationEnvironment">
+  <h3>Simulation Environment<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#SimulationEnvironment</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Environment" title="https://w3id.org/circularfactory/ManipulationSystem#Environment">Environment</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#createsSimEnvironment" title="https://w3id.org/circularfactory/ManipulationSystem#createsSimEnvironment">creates simulation environmemt</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SimulationSystem">
+  <h3>Simulation System<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#SimulationSystem</p>
+  <div class="comment">
+   <span class="markdown">Interface to simulation environmnet.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#createsSimEnvironment" title="https://w3id.org/circularfactory/ManipulationSystem#createsSimEnvironment">creates simulation environmemt</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasSubSystem" title="https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem">has sub system</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="TrainingSystem">
+  <h3>Training System<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#TrainingSystem</p>
+  <div class="comment">
+   <span class="markdown">Architecture for training neural network model.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#trains" title="https://w3id.org/circularfactory/ManipulationSystem#trains">trains</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasSubSystem" title="https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem">has sub system</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Workspace">
+  <h3>Workspace<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#Workspace</p>
+  <div class="comment">
+   <span class="markdown">Operational area within an Environment</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="https://w3id.org/circularfactory/Core#Location" target="_blank" title="https://w3id.org/circularfactory/Core#Location">Location</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#constraintsEnvironment" title="https://w3id.org/circularfactory/ManipulationSystem#constraintsEnvironment">constraints environment</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasWorkspace" title="https://w3id.org/circularfactory/ManipulationSystem#hasWorkspace">has workspace</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#capturesSensorData" title="https://w3id.org/circularfactory/ManipulationSystem#capturesSensorData">captures sensor data</a></li>
+  <li><a href="#constraintsEnvironment" title="https://w3id.org/circularfactory/ManipulationSystem#constraintsEnvironment">constraints environment</a></li>
+  <li><a href="#containsGripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#containsGripperPose">contains gripper pose</a></li>
+  <li><a href="#containsGripperAperture" title="https://w3id.org/circularfactory/ManipulationSystem#containsGripperAperture">contains gripper state</a></li>
+  <li><a href="#containsOrientation" title="https://w3id.org/circularfactory/ManipulationSystem#containsOrientation">contains pose</a></li>
+  <li><a href="#containsPosition" title="https://w3id.org/circularfactory/ManipulationSystem#containsPosition">contains pose</a></li>
+  <li><a href="#containsRobotArmState" title="https://w3id.org/circularfactory/ManipulationSystem#containsRobotArmState">contains robot arm state</a></li>
+  <li><a href="#createsSimEnvironment" title="https://w3id.org/circularfactory/ManipulationSystem#createsSimEnvironment">creates simulation environmemt</a></li>
+  <li><a href="#executesTrajectory" title="https://w3id.org/circularfactory/ManipulationSystem#executesTrajectory">executes trajectory</a></li>
+  <li><a href="#generatesGripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#generatesGripperPose">generates gripper pose</a></li>
+  <li><a href="#generatesGripperTrajectory" title="https://w3id.org/circularfactory/ManipulationSystem#generatesGripperTrajectory">generates gripper trajectory</a></li>
+  <li><a href="#generatesTrajectory" title="https://w3id.org/circularfactory/ManipulationSystem#generatesTrajectory">generates trajectory</a></li>
+  <li><a href="#hasGripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#hasGripperPose">has gripper pose</a></li>
+  <li><a href="#hasInitialGripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#hasInitialGripperPose">has initial gripper pose</a></li>
+  <li><a href="#hasManipulator" title="https://w3id.org/circularfactory/ManipulationSystem#hasManipulator">has manipulator</a></li>
+  <li><a href="#hasMotionPlanner" title="https://w3id.org/circularfactory/ManipulationSystem#hasMotionPlanner">has motion planner</a></li>
+  <li><a href="#hasRobotArm" title="https://w3id.org/circularfactory/ManipulationSystem#hasRobotArm">has robot arm</a></li>
+  <li><a href="#hasRobotArmState" title="https://w3id.org/circularfactory/ManipulationSystem#hasRobotArmState">has robot arm state</a></li>
+  <li><a href="#hasRobotGripper" title="https://w3id.org/circularfactory/ManipulationSystem#hasRobotGripper">has robot gripper</a></li>
+  <li><a href="#hasSensor" title="https://w3id.org/circularfactory/ManipulationSystem#hasSensor">has sensor</a></li>
+  <li><a href="#hasSubSystem" title="https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem">has sub system</a></li>
+  <li><a href="#hasTargetGripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#hasTargetGripperPose">has target gripper pose</a></li>
+  <li><a href="#hasWorkspace" title="https://w3id.org/circularfactory/ManipulationSystem#hasWorkspace">has workspace</a></li>
+  <li><a href="#interactsWith" title="https://w3id.org/circularfactory/ManipulationSystem#interactsWith">interacts with</a></li>
+  <li><a href="#locates" title="https://w3id.org/circularfactory/ManipulationSystem#locates">is located by</a></li>
+  <li><a href="#processesPredictions" title="https://w3id.org/circularfactory/ManipulationSystem#processesPredictions">processes predictions</a></li>
+  <li><a href="#processesData" title="https://w3id.org/circularfactory/ManipulationSystem#processesData">proecesses Data</a></li>
+  <li><a href="#trains" title="https://w3id.org/circularfactory/ManipulationSystem#trains">trains</a></li>
+ </ul>
+ <div class="entity" id="capturesSensorData">
+  <h3>captures sensor data<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#capturesSensorData</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="https://w3id.org/circularfactory/ManipulationSystem#Sensor" target="_blank" title="https://w3id.org/circularfactory/ManipulationSystem#Sensor">Sensor</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#SensorData" title="https://w3id.org/circularfactory/ManipulationSystem#SensorData">Sensor Data</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="constraintsEnvironment">
+  <h3>constraints environment<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#constraintsEnvironment</p>
+  <div class="comment">
+   <span class="markdown">Workspace defines operational boundaries within an environment</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Workspace" title="https://w3id.org/circularfactory/ManipulationSystem#Workspace">Workspace</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Environment" title="https://w3id.org/circularfactory/ManipulationSystem#Environment">Environment</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="containsGripperPose">
+  <h3>contains gripper pose<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#containsGripperPose</p>
+  <div class="comment">
+   <span class="markdown">A Robot Data instance contains the current pose of the gripper.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#RobotData" title="https://w3id.org/circularfactory/ManipulationSystem#RobotData">Robot Data</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#GripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#GripperPose">Gripper Pose</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="containsGripperAperture">
+  <h3>contains gripper state<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#containsGripperAperture</p>
+  <div class="comment">
+   <span class="markdown">Associates a GripperPose with a gripper state.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#GripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#GripperPose">Gripper Pose</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#GripperAperture" title="https://w3id.org/circularfactory/ManipulationSystem#GripperAperture">Gripper Aperture</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="containsOrientation">
+  <h3>contains pose<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#containsOrientation</p>
+  <div class="comment">
+   <span class="markdown">Associates a GripperPose with its spatial pose component.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#GripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#GripperPose">Gripper Pose</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Orientation" title="https://w3id.org/circularfactory/ManipulationSystem#Orientation">Orientation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="containsPosition">
+  <h3>contains pose<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#containsPosition</p>
+  <div class="comment">
+   <span class="markdown">Associates a GripperPose with its spatial pose component.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#GripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#GripperPose">Gripper Pose</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Position" title="https://w3id.org/circularfactory/ManipulationSystem#Position">3D Position</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="containsRobotArmState">
+  <h3>contains robot arm state<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#containsRobotArmState</p>
+  <div class="comment">
+   <span class="markdown">A Robot Data instance contains the current state of the robotic arm.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#RobotData" title="https://w3id.org/circularfactory/ManipulationSystem#RobotData">Robot Data</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#RobotArmState" title="https://w3id.org/circularfactory/ManipulationSystem#RobotArmState">RobotArm State</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="createsSimEnvironment">
+  <h3>creates simulation environmemt<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#createsSimEnvironment</p>
+  <div class="comment">
+   <span class="markdown">A simulation system creates a simulation environment.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#SimulationSystem" title="https://w3id.org/circularfactory/ManipulationSystem#SimulationSystem">Simulation System</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#SimulationEnvironment" title="https://w3id.org/circularfactory/ManipulationSystem#SimulationEnvironment">Simulation Environment</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="executesTrajectory">
+  <h3>executes trajectory<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#executesTrajectory</p>
+  <div class="comment">
+   <span class="markdown">The manipulator executes the trajectory.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Manipulator" title="https://w3id.org/circularfactory/ManipulationSystem#Manipulator">Manipulator</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#RobotGripperTrajectory" title="https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory">Robot Gripper Trajectory</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="generatesGripperPose">
+  <h3>generates gripper pose<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#generatesGripperPose</p>
+  <div class="comment">
+   <span class="markdown">The post processing unit generates the processed gripper pose prediction.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PostProcessingUnit" title="https://w3id.org/circularfactory/ManipulationSystem#PostProcessingUnit">Post processing unit</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#TargetGripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#TargetGripperPose">Gripper Pose</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="generatesGripperTrajectory">
+  <h3>generates gripper trajectory<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#generatesGripperTrajectory</p>
+  <div class="comment">
+   <span class="markdown">The post processing unit generates the processed trajectory of the gripper.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PostProcessingUnit" title="https://w3id.org/circularfactory/ManipulationSystem#PostProcessingUnit">Post processing unit</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#RobotGripperTrajectory" title="https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory">Robot Gripper Trajectory</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="generatesTrajectory">
+  <h3>generates trajectory<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#generatesTrajectory</p>
+  <div class="comment">
+   <span class="markdown">A motion planner plans a trajectory between an initial and a target gripper pose.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#MotionPlanner" title="https://w3id.org/circularfactory/ManipulationSystem#MotionPlanner">Motion Planner</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#RobotGripperTrajectory" title="https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory">Robot Gripper Trajectory</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasGripperPose">
+  <h3>has gripper pose<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#hasGripperPose</p>
+  <div class="comment">
+   <span class="markdown">A gripper has a pose (position, orientation, gripper aperture).</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#RobotGripper" title="https://w3id.org/circularfactory/ManipulationSystem#RobotGripper">RobotGripper</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#GripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#GripperPose">Gripper Pose</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasInitialGripperPose">
+  <h3>has initial gripper pose<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#hasInitialGripperPose</p>
+  <div class="comment">
+   <span class="markdown">A motion planner gets an initial gripper pose, as the starting pose of the trajectory.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#MotionPlanner" title="https://w3id.org/circularfactory/ManipulationSystem#MotionPlanner">Motion Planner</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#GripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#GripperPose">Gripper Pose</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasManipulator">
+  <h3>has manipulator<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#hasManipulator</p>
+  <div class="comment">
+   <span class="markdown">Manipulator Module is equipped with a manipulator.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="https://w3id.org/circularfactory/IntralogisticSystem#ManipulatorModule" target="_blank" title="https://w3id.org/circularfactory/IntralogisticSystem#ManipulatorModule">Manipulator Module</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Manipulator" title="https://w3id.org/circularfactory/ManipulationSystem#Manipulator">Manipulator</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasMotionPlanner">
+  <h3>has motion planner<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#hasMotionPlanner</p>
+  <div class="comment">
+   <span class="markdown">Manipulator has a Motion Planner to calculate control signals.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Manipulator" title="https://w3id.org/circularfactory/ManipulationSystem#Manipulator">Manipulator</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#MotionPlanner" title="https://w3id.org/circularfactory/ManipulationSystem#MotionPlanner">Motion Planner</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasRobotArm">
+  <h3>has robot arm<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#hasRobotArm</p>
+  <div class="comment">
+   <span class="markdown">A Manipulator has a robot arm.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Manipulator" title="https://w3id.org/circularfactory/ManipulationSystem#Manipulator">Manipulator</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#RobotArm" title="https://w3id.org/circularfactory/ManipulationSystem#RobotArm">RobotArm</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasRobotArmState">
+  <h3>has robot arm state<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#hasRobotArmState</p>
+  <div class="comment">
+   <span class="markdown">A robotic arm has specific joint configurations.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#RobotArm" title="https://w3id.org/circularfactory/ManipulationSystem#RobotArm">RobotArm</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#RobotArmState" title="https://w3id.org/circularfactory/ManipulationSystem#RobotArmState">RobotArm State</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasRobotGripper">
+  <h3>has robot gripper<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#hasRobotGripper</p>
+  <div class="comment">
+   <span class="markdown">Manipulator is equipped with a robotic gripper.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Manipulator" title="https://w3id.org/circularfactory/ManipulationSystem#Manipulator">Manipulator</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#RobotGripper" title="https://w3id.org/circularfactory/ManipulationSystem#RobotGripper">RobotGripper</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasSensor">
+  <h3>has sensor<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#hasSensor</p>
+  <div class="comment">
+   <span class="markdown">Manipulator is equipped with a sensor.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Manipulator" title="https://w3id.org/circularfactory/ManipulationSystem#Manipulator">Manipulator</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="https://w3id.org/circularfactory/ManipulationSystem#Sensor" target="_blank" title="https://w3id.org/circularfactory/ManipulationSystem#Sensor">Sensor</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasSubSystem">
+  <h3>has sub system<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem</p>
+  <div class="comment">
+   <span class="markdown">A grasp learning system can contain different components, such as object detection, simulation, training, nerual networks, and data buffer.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#GraspLearningSystem" title="https://w3id.org/circularfactory/ManipulationSystem#GraspLearningSystem">Grasp Learning System</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#DataBuffer" title="https://w3id.org/circularfactory/ManipulationSystem#DataBuffer">Data Buffer</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#NeuralNetworkModel" title="https://w3id.org/circularfactory/ManipulationSystem#NeuralNetworkModel">Neural Network Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#ObjectDetector" title="https://w3id.org/circularfactory/ManipulationSystem#ObjectDetector">Object Detector</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#PostProcessingUnit" title="https://w3id.org/circularfactory/ManipulationSystem#PostProcessingUnit">Post processing unit</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#SimulationSystem" title="https://w3id.org/circularfactory/ManipulationSystem#SimulationSystem">Simulation System</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#TrainingSystem" title="https://w3id.org/circularfactory/ManipulationSystem#TrainingSystem">Training System</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasTargetGripperPose">
+  <h3>has target gripper pose<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#hasTargetGripperPose</p>
+  <div class="comment">
+   <span class="markdown">A motion planner gets a target gripper pose, as the target pose of the trajectory.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#MotionPlanner" title="https://w3id.org/circularfactory/ManipulationSystem#MotionPlanner">Motion Planner</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#TargetGripperPose" title="https://w3id.org/circularfactory/ManipulationSystem#TargetGripperPose">Gripper Pose</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasWorkspace">
+  <h3>has workspace<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#hasWorkspace</p>
+  <div class="comment">
+   <span class="markdown">Every manipulation task from the intralogistics system has a defined workspace, in which the target component is located and grasped.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="https://w3id.org/circularfactory/IntralogisticSystem#ManipulationTask" target="_blank" title="https://w3id.org/circularfactory/IntralogisticSystem#ManipulationTask">Manipulation Task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Workspace" title="https://w3id.org/circularfactory/ManipulationSystem#Workspace">Workspace</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="interactsWith">
+  <h3>interacts with<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#interactsWith</p>
+  <div class="comment">
+   <span class="markdown">The robot manipulator moves in the environment and manipulates objects in the environment</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Manipulator" title="https://w3id.org/circularfactory/ManipulationSystem#Manipulator">Manipulator</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Environment" title="https://w3id.org/circularfactory/ManipulationSystem#Environment">Environment</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="locates">
+  <h3>is located by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#locates</p>
+  <div class="comment">
+   <span class="markdown">The target object or location of a manipulation task is located by an object detection system.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ObjectDetector" title="https://w3id.org/circularfactory/ManipulationSystem#ObjectDetector">Object Detector</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="https://w3id.org/circularfactory/Core#Component" target="_blank" title="https://w3id.org/circularfactory/Core#Component">Component</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="processesPredictions">
+  <h3>processes predictions<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#processesPredictions</p>
+  <div class="comment">
+   <span class="markdown">The post processing system processes prediction before passing them on.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PostProcessingUnit" title="https://w3id.org/circularfactory/ManipulationSystem#PostProcessingUnit">Post processing unit</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#NeuralNetworkModel" title="https://w3id.org/circularfactory/ManipulationSystem#NeuralNetworkModel">Neural Network Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="processesData">
+  <h3>proecesses Data<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#processesData</p>
+  <div class="comment">
+   <span class="markdown">The Data Buffer contains data and processes data, e.g. weighting data, filtering data, labeling data</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#DataBuffer" title="https://w3id.org/circularfactory/ManipulationSystem#DataBuffer">Data Buffer</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Data" title="https://w3id.org/circularfactory/ManipulationSystem#Data">Data</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="trains">
+  <h3>trains<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/circularfactory/ManipulationSystem#trains</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#TrainingSystem" title="https://w3id.org/circularfactory/ManipulationSystem#TrainingSystem">Training System</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#NeuralNetworkModel" title="https://w3id.org/circularfactory/ManipulationSystem#NeuralNetworkModel">Neural Network Model</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#https://orcid.org/0000-0002-3704-9567" title="https://orcid.org/0000-0002-3704-9567"> <span>0000 0002 3704 9567</span> </a></li>
+  <li><a href="#https://orcid.org/0000-0003-3544-8203" title="https://orcid.org/0000-0003-3544-8203"> <span>0000 0003 3544 8203</span> </a></li>
+  <li><a href="#https://orcid.org/0009-0007-3713-7739" title="https://orcid.org/0009-0007-3713-7739"> <span>0009 0007 3713 7739</span> </a></li>
+ </ul>
+ <div class="entity" id="https://orcid.org/0000-0002-3704-9567">
+  <h3>0000 0002 3704 9567<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://orcid.org/0000-0002-3704-9567</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/Person" target="_blank" title="http://xmlns.com/foaf/0.1/Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Jan-Felix Klein"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://orcid.org/0000-0003-3544-8203">
+  <h3>0000 0003 3544 8203<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://orcid.org/0000-0003-3544-8203</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/Person" target="_blank" title="http://xmlns.com/foaf/0.1/Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Rosa Petra Wolf"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://orcid.org/0009-0007-3713-7739">
+  <h3>0009 0007 3713 7739<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://orcid.org/0009-0007-3713-7739</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/Person" target="_blank" title="http://xmlns.com/foaf/0.1/Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Yitian Shi"</span>
+   </dd>
+  </dl>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+</div>
+</div>

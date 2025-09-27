@@ -1,0 +1,469 @@
+<https://w3id.org/circularfactory/ManipulationSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/circularfactory/ManipulationSystem> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/circularfactory/ManipulationSystem/1.1.1> .
+<https://w3id.org/circularfactory/ManipulationSystem> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/circularfactory/Core> .
+<https://w3id.org/circularfactory/ManipulationSystem> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/circularfactory/IntralogisticSystem> .
+<https://w3id.org/circularfactory/ManipulationSystem> <http://purl.org/dc/terms/created> "2025-09-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/circularfactory/ManipulationSystem> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-3704-9567> .
+<https://w3id.org/circularfactory/ManipulationSystem> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0003-3544-8203> .
+<https://w3id.org/circularfactory/ManipulationSystem> <http://purl.org/dc/terms/creator> <https://orcid.org/0009-0007-3713-7739> .
+<https://w3id.org/circularfactory/ManipulationSystem> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/circularfactory/ManipulationSystem> <http://purl.org/dc/terms/title> "The Manipulation System Ontology" .
+<https://w3id.org/circularfactory/ManipulationSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The Manipulation System Ontology defines concepts and relations that describe the structure, behavior, interactions and capabilities of the manipulator module which is part of the intralogistics system developed in the CRC 1574." .
+<https://w3id.org/circularfactory/ManipulationSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Manipulation System Ontology" .
+<https://w3id.org/circularfactory/ManipulationSystem> <http://www.w3.org/2002/07/owl#versionInfo> "1.1.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#capturesSensorData
+<https://w3id.org/circularfactory/ManipulationSystem#capturesSensorData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#capturesSensorData> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#Sensor> .
+<https://w3id.org/circularfactory/ManipulationSystem#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#capturesSensorData> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#SensorData> .
+<https://w3id.org/circularfactory/ManipulationSystem#capturesSensorData> <http://www.w3.org/2000/01/rdf-schema#label> "captures sensor data" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#constraintsEnvironment
+<https://w3id.org/circularfactory/ManipulationSystem#constraintsEnvironment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#constraintsEnvironment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#Workspace> .
+<https://w3id.org/circularfactory/ManipulationSystem#constraintsEnvironment> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#Environment> .
+<https://w3id.org/circularfactory/ManipulationSystem#constraintsEnvironment> <http://www.w3.org/2000/01/rdf-schema#comment> "Workspace defines operational boundaries within an environment" .
+<https://w3id.org/circularfactory/ManipulationSystem#constraintsEnvironment> <http://www.w3.org/2000/01/rdf-schema#label> "constraints environment" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#containsGripperAperture
+<https://w3id.org/circularfactory/ManipulationSystem#containsGripperAperture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#containsGripperAperture> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#GripperPose> .
+<https://w3id.org/circularfactory/ManipulationSystem#containsGripperAperture> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#GripperAperture> .
+<https://w3id.org/circularfactory/ManipulationSystem#containsGripperAperture> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a GripperPose with a gripper state." .
+<https://w3id.org/circularfactory/ManipulationSystem#containsGripperAperture> <http://www.w3.org/2000/01/rdf-schema#label> "contains gripper state" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#containsGripperPose
+<https://w3id.org/circularfactory/ManipulationSystem#containsGripperPose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#containsGripperPose> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#RobotData> .
+<https://w3id.org/circularfactory/ManipulationSystem#containsGripperPose> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#GripperPose> .
+<https://w3id.org/circularfactory/ManipulationSystem#containsGripperPose> <http://www.w3.org/2000/01/rdf-schema#comment> "A Robot Data instance contains the current pose of the gripper." .
+<https://w3id.org/circularfactory/ManipulationSystem#containsGripperPose> <http://www.w3.org/2000/01/rdf-schema#label> "contains gripper pose" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#containsOrientation
+<https://w3id.org/circularfactory/ManipulationSystem#containsOrientation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#containsOrientation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#GripperPose> .
+<https://w3id.org/circularfactory/ManipulationSystem#containsOrientation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#Orientation> .
+<https://w3id.org/circularfactory/ManipulationSystem#containsOrientation> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a GripperPose with its spatial pose component." .
+<https://w3id.org/circularfactory/ManipulationSystem#containsOrientation> <http://www.w3.org/2000/01/rdf-schema#label> "contains pose" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#containsPosition
+<https://w3id.org/circularfactory/ManipulationSystem#containsPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#containsPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#GripperPose> .
+<https://w3id.org/circularfactory/ManipulationSystem#containsPosition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#Position> .
+<https://w3id.org/circularfactory/ManipulationSystem#containsPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a GripperPose with its spatial pose component." .
+<https://w3id.org/circularfactory/ManipulationSystem#containsPosition> <http://www.w3.org/2000/01/rdf-schema#label> "contains pose" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#containsRobotArmState
+<https://w3id.org/circularfactory/ManipulationSystem#containsRobotArmState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#containsRobotArmState> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#RobotData> .
+<https://w3id.org/circularfactory/ManipulationSystem#containsRobotArmState> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#RobotArmState> .
+<https://w3id.org/circularfactory/ManipulationSystem#containsRobotArmState> <http://www.w3.org/2000/01/rdf-schema#comment> "A Robot Data instance contains the current state of the robotic arm." .
+<https://w3id.org/circularfactory/ManipulationSystem#containsRobotArmState> <http://www.w3.org/2000/01/rdf-schema#label> "contains robot arm state" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#createsSimEnvironment
+<https://w3id.org/circularfactory/ManipulationSystem#createsSimEnvironment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#createsSimEnvironment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#SimulationSystem> .
+<https://w3id.org/circularfactory/ManipulationSystem#createsSimEnvironment> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#SimulationEnvironment> .
+<https://w3id.org/circularfactory/ManipulationSystem#createsSimEnvironment> <http://www.w3.org/2000/01/rdf-schema#comment> "A simulation system creates a simulation environment." .
+<https://w3id.org/circularfactory/ManipulationSystem#createsSimEnvironment> <http://www.w3.org/2000/01/rdf-schema#label> "creates simulation environmemt" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#executesTrajectory
+<https://w3id.org/circularfactory/ManipulationSystem#executesTrajectory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#executesTrajectory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#Manipulator> .
+<https://w3id.org/circularfactory/ManipulationSystem#executesTrajectory> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory> .
+<https://w3id.org/circularfactory/ManipulationSystem#executesTrajectory> <http://www.w3.org/2000/01/rdf-schema#comment> "The manipulator executes the trajectory." .
+<https://w3id.org/circularfactory/ManipulationSystem#executesTrajectory> <http://www.w3.org/2000/01/rdf-schema#label> "executes trajectory" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#generatesGripperPose
+<https://w3id.org/circularfactory/ManipulationSystem#generatesGripperPose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#generatesGripperPose> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#PostProcessingUnit> .
+<https://w3id.org/circularfactory/ManipulationSystem#generatesGripperPose> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#TargetGripperPose> .
+<https://w3id.org/circularfactory/ManipulationSystem#generatesGripperPose> <http://www.w3.org/2000/01/rdf-schema#comment> "The post processing unit generates the processed gripper pose prediction." .
+<https://w3id.org/circularfactory/ManipulationSystem#generatesGripperPose> <http://www.w3.org/2000/01/rdf-schema#label> "generates gripper pose" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#generatesGripperTrajectory
+<https://w3id.org/circularfactory/ManipulationSystem#generatesGripperTrajectory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#generatesGripperTrajectory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#PostProcessingUnit> .
+<https://w3id.org/circularfactory/ManipulationSystem#generatesGripperTrajectory> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory> .
+<https://w3id.org/circularfactory/ManipulationSystem#generatesGripperTrajectory> <http://www.w3.org/2000/01/rdf-schema#comment> "The post processing unit generates the processed trajectory of the gripper." .
+<https://w3id.org/circularfactory/ManipulationSystem#generatesGripperTrajectory> <http://www.w3.org/2000/01/rdf-schema#label> "generates gripper trajectory" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#generatesTrajectory
+<https://w3id.org/circularfactory/ManipulationSystem#generatesTrajectory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#generatesTrajectory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#MotionPlanner> .
+<https://w3id.org/circularfactory/ManipulationSystem#generatesTrajectory> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory> .
+<https://w3id.org/circularfactory/ManipulationSystem#generatesTrajectory> <http://www.w3.org/2000/01/rdf-schema#comment> "A motion planner plans a trajectory between an initial and a target gripper pose." .
+<https://w3id.org/circularfactory/ManipulationSystem#generatesTrajectory> <http://www.w3.org/2000/01/rdf-schema#label> "generates trajectory" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#hasGripperPose
+<https://w3id.org/circularfactory/ManipulationSystem#hasGripperPose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasGripperPose> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#RobotGripper> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasGripperPose> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#GripperPose> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasGripperPose> <http://www.w3.org/2000/01/rdf-schema#comment> "A gripper has a pose (position, orientation, gripper aperture)." .
+<https://w3id.org/circularfactory/ManipulationSystem#hasGripperPose> <http://www.w3.org/2000/01/rdf-schema#label> "has gripper pose" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#hasInitialGripperPose
+<https://w3id.org/circularfactory/ManipulationSystem#hasInitialGripperPose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasInitialGripperPose> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#MotionPlanner> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasInitialGripperPose> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#GripperPose> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasInitialGripperPose> <http://www.w3.org/2000/01/rdf-schema#comment> "A motion planner gets an initial gripper pose, as the starting pose of the trajectory." .
+<https://w3id.org/circularfactory/ManipulationSystem#hasInitialGripperPose> <http://www.w3.org/2000/01/rdf-schema#label> "has initial gripper pose" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#hasManipulator
+<https://w3id.org/circularfactory/ManipulationSystem#hasManipulator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasManipulator> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/IntralogisticSystem#ManipulatorModule> .
+<https://w3id.org/circularfactory/IntralogisticSystem#ManipulatorModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasManipulator> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#Manipulator> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasManipulator> <http://www.w3.org/2000/01/rdf-schema#comment> "Manipulator Module is equipped with a manipulator." .
+<https://w3id.org/circularfactory/ManipulationSystem#hasManipulator> <http://www.w3.org/2000/01/rdf-schema#label> "has manipulator" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#hasMotionPlanner
+<https://w3id.org/circularfactory/ManipulationSystem#hasMotionPlanner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasMotionPlanner> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#Manipulator> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasMotionPlanner> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#MotionPlanner> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasMotionPlanner> <http://www.w3.org/2000/01/rdf-schema#comment> "Manipulator has a Motion Planner to calculate control signals." .
+<https://w3id.org/circularfactory/ManipulationSystem#hasMotionPlanner> <http://www.w3.org/2000/01/rdf-schema#label> "has motion planner" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#hasRobotArm
+<https://w3id.org/circularfactory/ManipulationSystem#hasRobotArm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasRobotArm> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#Manipulator> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasRobotArm> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#RobotArm> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasRobotArm> <http://www.w3.org/2000/01/rdf-schema#comment> "A Manipulator has a robot arm." .
+<https://w3id.org/circularfactory/ManipulationSystem#hasRobotArm> <http://www.w3.org/2000/01/rdf-schema#label> "has robot arm" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#hasRobotArmState
+<https://w3id.org/circularfactory/ManipulationSystem#hasRobotArmState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasRobotArmState> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#RobotArm> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasRobotArmState> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#RobotArmState> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasRobotArmState> <http://www.w3.org/2000/01/rdf-schema#comment> "A robotic arm has specific joint configurations." .
+<https://w3id.org/circularfactory/ManipulationSystem#hasRobotArmState> <http://www.w3.org/2000/01/rdf-schema#label> "has robot arm state" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#hasRobotGripper
+<https://w3id.org/circularfactory/ManipulationSystem#hasRobotGripper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasRobotGripper> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#Manipulator> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasRobotGripper> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#RobotGripper> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasRobotGripper> <http://www.w3.org/2000/01/rdf-schema#comment> "Manipulator is equipped with a robotic gripper." .
+<https://w3id.org/circularfactory/ManipulationSystem#hasRobotGripper> <http://www.w3.org/2000/01/rdf-schema#label> "has robot gripper" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#hasSensor
+<https://w3id.org/circularfactory/ManipulationSystem#hasSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasSensor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#Manipulator> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasSensor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#Sensor> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Manipulator is equipped with a sensor." .
+<https://w3id.org/circularfactory/ManipulationSystem#hasSensor> <http://www.w3.org/2000/01/rdf-schema#label> "has sensor" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem
+<https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#GraspLearningSystem> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#DataBuffer> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#NeuralNetworkModel> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#ObjectDetector> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#PostProcessingUnit> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#SimulationSystem> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#TrainingSystem> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A grasp learning system can contain different components, such as object detection, simulation, training, nerual networks, and data buffer." .
+<https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem> <http://www.w3.org/2000/01/rdf-schema#label> "has sub system" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#hasTargetGripperPose
+<https://w3id.org/circularfactory/ManipulationSystem#hasTargetGripperPose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasTargetGripperPose> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#MotionPlanner> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasTargetGripperPose> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#TargetGripperPose> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasTargetGripperPose> <http://www.w3.org/2000/01/rdf-schema#comment> "A motion planner gets a target gripper pose, as the target pose of the trajectory." .
+<https://w3id.org/circularfactory/ManipulationSystem#hasTargetGripperPose> <http://www.w3.org/2000/01/rdf-schema#label> "has target gripper pose" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#hasWorkspace
+<https://w3id.org/circularfactory/ManipulationSystem#hasWorkspace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasWorkspace> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/IntralogisticSystem#ManipulationTask> .
+<https://w3id.org/circularfactory/IntralogisticSystem#ManipulationTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasWorkspace> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#Workspace> .
+<https://w3id.org/circularfactory/ManipulationSystem#hasWorkspace> <http://www.w3.org/2000/01/rdf-schema#comment> "Every manipulation task from the intralogistics system has a defined workspace, in which the target component is located and grasped." .
+<https://w3id.org/circularfactory/ManipulationSystem#hasWorkspace> <http://www.w3.org/2000/01/rdf-schema#label> "has workspace" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#interactsWith
+<https://w3id.org/circularfactory/ManipulationSystem#interactsWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#interactsWith> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#Manipulator> .
+<https://w3id.org/circularfactory/ManipulationSystem#interactsWith> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#Environment> .
+<https://w3id.org/circularfactory/ManipulationSystem#interactsWith> <http://www.w3.org/2000/01/rdf-schema#comment> "The robot manipulator moves in the environment and manipulates objects in the environment" .
+<https://w3id.org/circularfactory/ManipulationSystem#interactsWith> <http://www.w3.org/2000/01/rdf-schema#label> "interacts with" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#locates
+<https://w3id.org/circularfactory/ManipulationSystem#locates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#locates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#ObjectDetector> .
+<https://w3id.org/circularfactory/ManipulationSystem#locates> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/Core#Component> .
+<https://w3id.org/circularfactory/Core#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#locates> <http://www.w3.org/2000/01/rdf-schema#comment> "The target object or location of a manipulation task is located by an object detection system." .
+<https://w3id.org/circularfactory/ManipulationSystem#locates> <http://www.w3.org/2000/01/rdf-schema#label> "is located by" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#processesData
+<https://w3id.org/circularfactory/ManipulationSystem#processesData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#processesData> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#DataBuffer> .
+<https://w3id.org/circularfactory/ManipulationSystem#processesData> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#Data> .
+<https://w3id.org/circularfactory/ManipulationSystem#processesData> <http://www.w3.org/2000/01/rdf-schema#comment> "The Data Buffer contains data and processes data, e.g. weighting data, filtering data, labeling data" .
+<https://w3id.org/circularfactory/ManipulationSystem#processesData> <http://www.w3.org/2000/01/rdf-schema#label> "proecesses Data" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#processesPredictions
+<https://w3id.org/circularfactory/ManipulationSystem#processesPredictions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#processesPredictions> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#PostProcessingUnit> .
+<https://w3id.org/circularfactory/ManipulationSystem#processesPredictions> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#NeuralNetworkModel> .
+<https://w3id.org/circularfactory/ManipulationSystem#processesPredictions> <http://www.w3.org/2000/01/rdf-schema#comment> "The post processing system processes prediction before passing them on." .
+<https://w3id.org/circularfactory/ManipulationSystem#processesPredictions> <http://www.w3.org/2000/01/rdf-schema#label> "processes predictions" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#trains
+<https://w3id.org/circularfactory/ManipulationSystem#trains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/circularfactory/ManipulationSystem#trains> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/ManipulationSystem#TrainingSystem> .
+<https://w3id.org/circularfactory/ManipulationSystem#trains> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/ManipulationSystem#NeuralNetworkModel> .
+<https://w3id.org/circularfactory/ManipulationSystem#trains> <http://www.w3.org/2000/01/rdf-schema#label> "trains" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#List
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#List> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/circularfactory/Core#Component
+# 
+# https://w3id.org/circularfactory/Core#Location
+<https://w3id.org/circularfactory/Core#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/circularfactory/Core#Measurement
+<https://w3id.org/circularfactory/Core#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/circularfactory/Core#Resource
+<https://w3id.org/circularfactory/Core#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/circularfactory/IntralogisticSystem#ManipulationTask
+# 
+# https://w3id.org/circularfactory/IntralogisticSystem#ManipulatorModule
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#Data
+<https://w3id.org/circularfactory/ManipulationSystem#Data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#Data> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic data class, that will be more detailed in the future to handle specific and different data types and uncertainties" .
+<https://w3id.org/circularfactory/ManipulationSystem#Data> <http://www.w3.org/2000/01/rdf-schema#label> "Data" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#DataBuffer
+<https://w3id.org/circularfactory/ManipulationSystem#DataBuffer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#DataBuffer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/Core#Resource> .
+<https://w3id.org/circularfactory/ManipulationSystem#DataBuffer> <http://www.w3.org/2000/01/rdf-schema#comment> "The data buffer contains data in a systematic way, for the grasping system to use as training data and to predict grasps/trajectories. It will be more detailed in the future to deal with uncertainty and other different processing steps." .
+<https://w3id.org/circularfactory/ManipulationSystem#DataBuffer> <http://www.w3.org/2000/01/rdf-schema#label> "Data Buffer" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#Environment
+<https://w3id.org/circularfactory/ManipulationSystem#Environment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#Environment> <http://www.w3.org/2000/01/rdf-schema#label> "Environment" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#GraspLearningSystem
+<https://w3id.org/circularfactory/ManipulationSystem#GraspLearningSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#GraspLearningSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/Core#Resource> .
+<https://w3id.org/circularfactory/ManipulationSystem#GraspLearningSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The whole machine learning based system for grasp prediction and training" .
+<https://w3id.org/circularfactory/ManipulationSystem#GraspLearningSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Grasp Learning System" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#GripperAperture
+<https://w3id.org/circularfactory/ManipulationSystem#GripperAperture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#GripperAperture> <http://www.w3.org/2000/01/rdf-schema#comment> "Distance between the gripper fingers/jaws." .
+<https://w3id.org/circularfactory/ManipulationSystem#GripperAperture> <http://www.w3.org/2000/01/rdf-schema#label> "Gripper Aperture" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#GripperPose
+<https://w3id.org/circularfactory/ManipulationSystem#GripperPose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#GripperPose> <http://www.w3.org/2000/01/rdf-schema#comment> "A GripperPose consists of gripper position, a gripper orientation and a gripper aperture." .
+<https://w3id.org/circularfactory/ManipulationSystem#GripperPose> <http://www.w3.org/2000/01/rdf-schema#label> "Gripper Pose" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#Manipulator
+<https://w3id.org/circularfactory/ManipulationSystem#Manipulator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#Manipulator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/Core#Resource> .
+<https://w3id.org/circularfactory/ManipulationSystem#Manipulator> <http://www.w3.org/2000/01/rdf-schema#label> "Manipulator" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#MotionPlanner
+<https://w3id.org/circularfactory/ManipulationSystem#MotionPlanner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#MotionPlanner> <http://www.w3.org/2000/01/rdf-schema#comment> "Plans a trajectory between an initial gripper pose and a predicted target gripper pose. The initial gripper pose can be the current pose of the gripper or another predicted gripper pose" .
+<https://w3id.org/circularfactory/ManipulationSystem#MotionPlanner> <http://www.w3.org/2000/01/rdf-schema#label> "Motion Planner" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#NeuralNetworkModel
+<https://w3id.org/circularfactory/ManipulationSystem#NeuralNetworkModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#NeuralNetworkModel> <http://www.w3.org/2000/01/rdf-schema#label> "Neural Network Model" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#ObjectDetector
+<https://w3id.org/circularfactory/ManipulationSystem#ObjectDetector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#ObjectDetector> <http://www.w3.org/2000/01/rdf-schema#comment> "Vision part of grasp learning system responsible for object detection." .
+<https://w3id.org/circularfactory/ManipulationSystem#ObjectDetector> <http://www.w3.org/2000/01/rdf-schema#label> "Object Detector" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#Orientation
+<https://w3id.org/circularfactory/ManipulationSystem#Orientation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#Orientation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/Core#Location> .
+<https://w3id.org/circularfactory/ManipulationSystem#Orientation> <http://www.w3.org/2000/01/rdf-schema#comment> "Orientation of the gripper (end-effector)" .
+<https://w3id.org/circularfactory/ManipulationSystem#Orientation> <http://www.w3.org/2000/01/rdf-schema#label> "Orientation" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#Position
+<https://w3id.org/circularfactory/ManipulationSystem#Position> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#Position> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/Core#Location> .
+<https://w3id.org/circularfactory/ManipulationSystem#Position> <http://www.w3.org/2000/01/rdf-schema#comment> "3D position coordinate of the gripper (end-effector). " .
+<https://w3id.org/circularfactory/ManipulationSystem#Position> <http://www.w3.org/2000/01/rdf-schema#label> "3D Position" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#PostProcessingUnit
+<https://w3id.org/circularfactory/ManipulationSystem#PostProcessingUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#PostProcessingUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "A system to post process predictions from the neural network, such as scaling, or coordinate frame transformation." .
+<https://w3id.org/circularfactory/ManipulationSystem#PostProcessingUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Post processing unit" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#RealWorldEnvironment
+<https://w3id.org/circularfactory/ManipulationSystem#RealWorldEnvironment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#RealWorldEnvironment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/ManipulationSystem#Environment> .
+<https://w3id.org/circularfactory/ManipulationSystem#RealWorldEnvironment> <http://www.w3.org/2000/01/rdf-schema#label> "Real World Environment" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#RobotArm
+<https://w3id.org/circularfactory/ManipulationSystem#RobotArm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#RobotArm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/Core#Resource> .
+<https://w3id.org/circularfactory/ManipulationSystem#RobotArm> <http://www.w3.org/2000/01/rdf-schema#label> "RobotArm" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#RobotArmState
+<https://w3id.org/circularfactory/ManipulationSystem#RobotArmState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#RobotArmState> <http://www.w3.org/2000/01/rdf-schema#comment> "Current joint angles of the robotic arm." .
+<https://w3id.org/circularfactory/ManipulationSystem#RobotArmState> <http://www.w3.org/2000/01/rdf-schema#label> "RobotArm State" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#RobotData
+<https://w3id.org/circularfactory/ManipulationSystem#RobotData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#RobotData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/Core#Measurement> .
+<https://w3id.org/circularfactory/ManipulationSystem#RobotData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/ManipulationSystem#Data> .
+<https://w3id.org/circularfactory/ManipulationSystem#RobotData> <http://www.w3.org/2000/01/rdf-schema#comment> "Prorioceptive data from a robot, such as joint configurations" .
+<https://w3id.org/circularfactory/ManipulationSystem#RobotData> <http://www.w3.org/2000/01/rdf-schema#label> "Robot Data" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#RobotGripper
+<https://w3id.org/circularfactory/ManipulationSystem#RobotGripper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#RobotGripper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/Core#Resource> .
+<https://w3id.org/circularfactory/ManipulationSystem#RobotGripper> <http://www.w3.org/2000/01/rdf-schema#label> "RobotGripper" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory
+<https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/circularfactory/ManipulationSystem#GripperPose> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory> <http://www.w3.org/2000/01/rdf-schema#comment> "A trajectory is an ordered list where all members are GripperPoses." .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#RobotSensor
+<https://w3id.org/circularfactory/ManipulationSystem#RobotSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#RobotSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/Core#Resource> .
+<https://w3id.org/circularfactory/ManipulationSystem#RobotSensor> <http://www.w3.org/2000/01/rdf-schema#label> "RobotSensor" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#Sensor
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#SensorData
+<https://w3id.org/circularfactory/ManipulationSystem#SensorData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#SensorData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/Core#Measurement> .
+<https://w3id.org/circularfactory/ManipulationSystem#SensorData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/ManipulationSystem#Data> .
+<https://w3id.org/circularfactory/ManipulationSystem#SensorData> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor Data" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#SimulationEnvironment
+<https://w3id.org/circularfactory/ManipulationSystem#SimulationEnvironment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#SimulationEnvironment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/ManipulationSystem#Environment> .
+<https://w3id.org/circularfactory/ManipulationSystem#SimulationEnvironment> <http://www.w3.org/2000/01/rdf-schema#label> "Simulation Environment" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#SimulationSystem
+<https://w3id.org/circularfactory/ManipulationSystem#SimulationSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#SimulationSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Interface to simulation environmnet." .
+<https://w3id.org/circularfactory/ManipulationSystem#SimulationSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Simulation System" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#TargetGripperPose
+<https://w3id.org/circularfactory/ManipulationSystem#TargetGripperPose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#TargetGripperPose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/ManipulationSystem#GripperPose> .
+<https://w3id.org/circularfactory/ManipulationSystem#TargetGripperPose> <http://www.w3.org/2000/01/rdf-schema#comment> "A prediction of a gripper pose, as for example a result of a neural network grasp prediction model." .
+<https://w3id.org/circularfactory/ManipulationSystem#TargetGripperPose> <http://www.w3.org/2000/01/rdf-schema#label> "Gripper Pose" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#TrainingSystem
+<https://w3id.org/circularfactory/ManipulationSystem#TrainingSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#TrainingSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Architecture for training neural network model." .
+<https://w3id.org/circularfactory/ManipulationSystem#TrainingSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Training System" .
+# 
+# https://w3id.org/circularfactory/ManipulationSystem#Workspace
+<https://w3id.org/circularfactory/ManipulationSystem#Workspace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/ManipulationSystem#Workspace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/Core#Location> .
+<https://w3id.org/circularfactory/ManipulationSystem#Workspace> <http://www.w3.org/2000/01/rdf-schema#comment> "Operational area within an Environment" .
+<https://w3id.org/circularfactory/ManipulationSystem#Workspace> <http://www.w3.org/2000/01/rdf-schema#label> "Workspace" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://orcid.org/0000-0002-3704-9567
+<https://orcid.org/0000-0002-3704-9567> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://orcid.org/0000-0002-3704-9567> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<https://orcid.org/0000-0002-3704-9567> <http://xmlns.com/foaf/0.1/name> "Jan-Felix Klein" .
+# 
+# https://orcid.org/0000-0003-3544-8203
+<https://orcid.org/0000-0003-3544-8203> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://orcid.org/0000-0003-3544-8203> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<https://orcid.org/0000-0003-3544-8203> <http://xmlns.com/foaf/0.1/name> "Rosa Petra Wolf" .
+# 
+# https://orcid.org/0009-0007-3713-7739
+<https://orcid.org/0009-0007-3713-7739> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://orcid.org/0009-0007-3713-7739> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<https://orcid.org/0009-0007-3713-7739> <http://xmlns.com/foaf/0.1/name> "Yitian Shi" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

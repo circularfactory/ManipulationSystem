@@ -1,0 +1,527 @@
+@prefix : <https://w3id.org/circularfactory/ManipulationSystem#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/circularfactory/ManipulationSystem#> .
+
+<https://w3id.org/circularfactory/ManipulationSystem> rdf:type owl:Ontology ;
+                                                       owl:versionIRI <https://w3id.org/circularfactory/ManipulationSystem/1.1.1> ;
+                                                       owl:imports <https://w3id.org/circularfactory/Core> ,
+                                                                   <https://w3id.org/circularfactory/IntralogisticSystem> ;
+                                                       <http://purl.org/dc/terms/created> "2025-09-25"^^xsd:date ;
+                                                       <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-3704-9567> ,
+                                                                                          <https://orcid.org/0000-0003-3544-8203> ,
+                                                                                          <https://orcid.org/0009-0007-3713-7739> ;
+                                                       <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                       <http://purl.org/dc/terms/title> "The Manipulation System Ontology" ;
+                                                       rdfs:comment "The Manipulation System Ontology defines concepts and relations that describe the structure, behavior, interactions and capabilities of the manipulator module which is part of the intralogistics system developed in the CRC 1574." ;
+                                                       rdfs:label "Manipulation System Ontology" ;
+                                                       owl:versionInfo "1.1.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#first
+rdf:first rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+rdf:rest rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#capturesSensorData
+:capturesSensorData rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Sensor ;
+                    rdfs:range :SensorData ;
+                    rdfs:label "captures sensor data" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#constraintsEnvironment
+:constraintsEnvironment rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Workspace ;
+                        rdfs:range :Environment ;
+                        rdfs:comment "Workspace defines operational boundaries within an environment" ;
+                        rdfs:label "constraints environment" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#containsGripperAperture
+:containsGripperAperture rdf:type owl:ObjectProperty ;
+                         rdfs:domain :GripperPose ;
+                         rdfs:range :GripperAperture ;
+                         rdfs:comment "Associates a GripperPose with a gripper state." ;
+                         rdfs:label "contains gripper state" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#containsGripperPose
+:containsGripperPose rdf:type owl:ObjectProperty ;
+                     rdfs:domain :RobotData ;
+                     rdfs:range :GripperPose ;
+                     rdfs:comment "A Robot Data instance contains the current pose of the gripper." ;
+                     rdfs:label "contains gripper pose" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#containsOrientation
+:containsOrientation rdf:type owl:ObjectProperty ;
+                     rdfs:domain :GripperPose ;
+                     rdfs:range :Orientation ;
+                     rdfs:comment "Associates a GripperPose with its spatial pose component." ;
+                     rdfs:label "contains pose" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#containsPosition
+:containsPosition rdf:type owl:ObjectProperty ;
+                  rdfs:domain :GripperPose ;
+                  rdfs:range :Position ;
+                  rdfs:comment "Associates a GripperPose with its spatial pose component." ;
+                  rdfs:label "contains pose" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#containsRobotArmState
+:containsRobotArmState rdf:type owl:ObjectProperty ;
+                       rdfs:domain :RobotData ;
+                       rdfs:range :RobotArmState ;
+                       rdfs:comment "A Robot Data instance contains the current state of the robotic arm." ;
+                       rdfs:label "contains robot arm state" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#createsSimEnvironment
+:createsSimEnvironment rdf:type owl:ObjectProperty ;
+                       rdfs:domain :SimulationSystem ;
+                       rdfs:range :SimulationEnvironment ;
+                       rdfs:comment "A simulation system creates a simulation environment." ;
+                       rdfs:label "creates simulation environmemt" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#executesTrajectory
+:executesTrajectory rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Manipulator ;
+                    rdfs:range :RobotGripperTrajectory ;
+                    rdfs:comment "The manipulator executes the trajectory." ;
+                    rdfs:label "executes trajectory" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#generatesGripperPose
+:generatesGripperPose rdf:type owl:ObjectProperty ;
+                      rdfs:domain :PostProcessingUnit ;
+                      rdfs:range :TargetGripperPose ;
+                      rdfs:comment "The post processing unit generates the processed gripper pose prediction." ;
+                      rdfs:label "generates gripper pose" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#generatesGripperTrajectory
+:generatesGripperTrajectory rdf:type owl:ObjectProperty ;
+                            rdfs:domain :PostProcessingUnit ;
+                            rdfs:range :RobotGripperTrajectory ;
+                            rdfs:comment "The post processing unit generates the processed trajectory of the gripper." ;
+                            rdfs:label "generates gripper trajectory" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#generatesTrajectory
+:generatesTrajectory rdf:type owl:ObjectProperty ;
+                     rdfs:domain :MotionPlanner ;
+                     rdfs:range :RobotGripperTrajectory ;
+                     rdfs:comment "A motion planner plans a trajectory between an initial and a target gripper pose." ;
+                     rdfs:label "generates trajectory" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#hasGripperPose
+:hasGripperPose rdf:type owl:ObjectProperty ;
+                rdfs:domain :RobotGripper ;
+                rdfs:range :GripperPose ;
+                rdfs:comment "A gripper has a pose (position, orientation, gripper aperture)." ;
+                rdfs:label "has gripper pose" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#hasInitialGripperPose
+:hasInitialGripperPose rdf:type owl:ObjectProperty ;
+                       rdfs:domain :MotionPlanner ;
+                       rdfs:range :GripperPose ;
+                       rdfs:comment "A motion planner gets an initial gripper pose, as the starting pose of the trajectory." ;
+                       rdfs:label "has initial gripper pose" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#hasManipulator
+:hasManipulator rdf:type owl:ObjectProperty ;
+                rdfs:domain <https://w3id.org/circularfactory/IntralogisticSystem#ManipulatorModule> ;
+                rdfs:range :Manipulator ;
+                rdfs:comment "Manipulator Module is equipped with a manipulator." ;
+                rdfs:label "has manipulator" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#hasMotionPlanner
+:hasMotionPlanner rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Manipulator ;
+                  rdfs:range :MotionPlanner ;
+                  rdfs:comment "Manipulator has a Motion Planner to calculate control signals." ;
+                  rdfs:label "has motion planner" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#hasRobotArm
+:hasRobotArm rdf:type owl:ObjectProperty ;
+             rdfs:domain :Manipulator ;
+             rdfs:range :RobotArm ;
+             rdfs:comment "A Manipulator has a robot arm." ;
+             rdfs:label "has robot arm" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#hasRobotArmState
+:hasRobotArmState rdf:type owl:ObjectProperty ;
+                  rdfs:domain :RobotArm ;
+                  rdfs:range :RobotArmState ;
+                  rdfs:comment "A robotic arm has specific joint configurations." ;
+                  rdfs:label "has robot arm state" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#hasRobotGripper
+:hasRobotGripper rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Manipulator ;
+                 rdfs:range :RobotGripper ;
+                 rdfs:comment "Manipulator is equipped with a robotic gripper." ;
+                 rdfs:label "has robot gripper" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#hasSensor
+:hasSensor rdf:type owl:ObjectProperty ;
+           rdfs:domain :Manipulator ;
+           rdfs:range :Sensor ;
+           rdfs:comment "Manipulator is equipped with a sensor." ;
+           rdfs:label "has sensor" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#hasSubSystem
+:hasSubSystem rdf:type owl:ObjectProperty ;
+              rdfs:domain :GraspLearningSystem ;
+              rdfs:range :DataBuffer ,
+                         :NeuralNetworkModel ,
+                         :ObjectDetector ,
+                         :PostProcessingUnit ,
+                         :SimulationSystem ,
+                         :TrainingSystem ;
+              rdfs:comment "A grasp learning system can contain different components, such as object detection, simulation, training, nerual networks, and data buffer." ;
+              rdfs:label "has sub system" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#hasTargetGripperPose
+:hasTargetGripperPose rdf:type owl:ObjectProperty ;
+                      rdfs:domain :MotionPlanner ;
+                      rdfs:range :TargetGripperPose ;
+                      rdfs:comment "A motion planner gets a target gripper pose, as the target pose of the trajectory." ;
+                      rdfs:label "has target gripper pose" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#hasWorkspace
+:hasWorkspace rdf:type owl:ObjectProperty ;
+              rdfs:domain <https://w3id.org/circularfactory/IntralogisticSystem#ManipulationTask> ;
+              rdfs:range :Workspace ;
+              rdfs:comment "Every manipulation task from the intralogistics system has a defined workspace, in which the target component is located and grasped." ;
+              rdfs:label "has workspace" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#interactsWith
+:interactsWith rdf:type owl:ObjectProperty ;
+               rdfs:domain :Manipulator ;
+               rdfs:range :Environment ;
+               rdfs:comment "The robot manipulator moves in the environment and manipulates objects in the environment" ;
+               rdfs:label "interacts with" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#locates
+:locates rdf:type owl:ObjectProperty ;
+         rdfs:domain :ObjectDetector ;
+         rdfs:range <https://w3id.org/circularfactory/Core#Component> ;
+         rdfs:comment "The target object or location of a manipulation task is located by an object detection system." ;
+         rdfs:label "is located by" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#processesData
+:processesData rdf:type owl:ObjectProperty ;
+               rdfs:domain :DataBuffer ;
+               rdfs:range :Data ;
+               rdfs:comment "The Data Buffer contains data and processes data, e.g. weighting data, filtering data, labeling data" ;
+               rdfs:label "proecesses Data" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#processesPredictions
+:processesPredictions rdf:type owl:ObjectProperty ;
+                      rdfs:domain :PostProcessingUnit ;
+                      rdfs:range :NeuralNetworkModel ;
+                      rdfs:comment "The post processing system processes prediction before passing them on." ;
+                      rdfs:label "processes predictions" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#trains
+:trains rdf:type owl:ObjectProperty ;
+        rdfs:domain :TrainingSystem ;
+        rdfs:range :NeuralNetworkModel ;
+        rdfs:label "trains" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#List
+rdf:List rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
+
+
+###  https://w3id.org/circularfactory/Core#Component
+<https://w3id.org/circularfactory/Core#Component> rdf:type owl:Class .
+
+
+###  https://w3id.org/circularfactory/Core#Location
+<https://w3id.org/circularfactory/Core#Location> rdf:type owl:Class .
+
+
+###  https://w3id.org/circularfactory/Core#Measurement
+<https://w3id.org/circularfactory/Core#Measurement> rdf:type owl:Class .
+
+
+###  https://w3id.org/circularfactory/Core#Resource
+<https://w3id.org/circularfactory/Core#Resource> rdf:type owl:Class .
+
+
+###  https://w3id.org/circularfactory/IntralogisticSystem#ManipulationTask
+<https://w3id.org/circularfactory/IntralogisticSystem#ManipulationTask> rdf:type owl:Class .
+
+
+###  https://w3id.org/circularfactory/IntralogisticSystem#ManipulatorModule
+<https://w3id.org/circularfactory/IntralogisticSystem#ManipulatorModule> rdf:type owl:Class .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#Data
+:Data rdf:type owl:Class ;
+      rdfs:comment "A generic data class, that will be more detailed in the future to handle specific and different data types and uncertainties" ;
+      rdfs:label "Data" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#DataBuffer
+:DataBuffer rdf:type owl:Class ;
+            rdfs:subClassOf <https://w3id.org/circularfactory/Core#Resource> ;
+            rdfs:comment "The data buffer contains data in a systematic way, for the grasping system to use as training data and to predict grasps/trajectories. It will be more detailed in the future to deal with uncertainty and other different processing steps." ;
+            rdfs:label "Data Buffer" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#Environment
+:Environment rdf:type owl:Class ;
+             rdfs:label "Environment" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#GraspLearningSystem
+:GraspLearningSystem rdf:type owl:Class ;
+                     rdfs:subClassOf <https://w3id.org/circularfactory/Core#Resource> ;
+                     rdfs:comment "The whole machine learning based system for grasp prediction and training" ;
+                     rdfs:label "Grasp Learning System" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#GripperAperture
+:GripperAperture rdf:type owl:Class ;
+                 rdfs:comment "Distance between the gripper fingers/jaws." ;
+                 rdfs:label "Gripper Aperture" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#GripperPose
+:GripperPose rdf:type owl:Class ;
+             rdfs:comment "A GripperPose consists of gripper position, a gripper orientation and a gripper aperture." ;
+             rdfs:label "Gripper Pose" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#Manipulator
+:Manipulator rdf:type owl:Class ;
+             rdfs:subClassOf <https://w3id.org/circularfactory/Core#Resource> ;
+             rdfs:label "Manipulator" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#MotionPlanner
+:MotionPlanner rdf:type owl:Class ;
+               rdfs:comment "Plans a trajectory between an initial gripper pose and a predicted target gripper pose. The initial gripper pose can be the current pose of the gripper or another predicted gripper pose" ;
+               rdfs:label "Motion Planner" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#NeuralNetworkModel
+:NeuralNetworkModel rdf:type owl:Class ;
+                    rdfs:label "Neural Network Model" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#ObjectDetector
+:ObjectDetector rdf:type owl:Class ;
+                rdfs:comment "Vision part of grasp learning system responsible for object detection." ;
+                rdfs:label "Object Detector" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#Orientation
+:Orientation rdf:type owl:Class ;
+             rdfs:subClassOf <https://w3id.org/circularfactory/Core#Location> ;
+             rdfs:comment "Orientation of the gripper (end-effector)" ;
+             rdfs:label "Orientation" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#Position
+:Position rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/circularfactory/Core#Location> ;
+          rdfs:comment "3D position coordinate of the gripper (end-effector). " ;
+          rdfs:label "3D Position" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#PostProcessingUnit
+:PostProcessingUnit rdf:type owl:Class ;
+                    rdfs:comment "A system to post process predictions from the neural network, such as scaling, or coordinate frame transformation." ;
+                    rdfs:label "Post processing unit" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#RealWorldEnvironment
+:RealWorldEnvironment rdf:type owl:Class ;
+                      rdfs:subClassOf :Environment ;
+                      rdfs:label "Real World Environment" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#RobotArm
+:RobotArm rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/circularfactory/Core#Resource> ;
+          rdfs:label "RobotArm" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#RobotArmState
+:RobotArmState rdf:type owl:Class ;
+               rdfs:comment "Current joint angles of the robotic arm." ;
+               rdfs:label "RobotArm State" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#RobotData
+:RobotData rdf:type owl:Class ;
+           rdfs:subClassOf <https://w3id.org/circularfactory/Core#Measurement> ,
+                           :Data ;
+           rdfs:comment "Prorioceptive data from a robot, such as joint configurations" ;
+           rdfs:label "Robot Data" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#RobotGripper
+:RobotGripper rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/circularfactory/Core#Resource> ;
+              rdfs:label "RobotGripper" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#RobotGripperTrajectory
+:RobotGripperTrajectory rdf:type owl:Class ;
+                        rdfs:subClassOf rdf:List ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty rdf:first ;
+                                          owl:allValuesFrom :GripperPose
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty rdf:rest ;
+                                          owl:allValuesFrom :RobotGripperTrajectory
+                                        ] ;
+                        rdfs:comment "A trajectory is an ordered list where all members are GripperPoses." .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#RobotSensor
+:RobotSensor rdf:type owl:Class ;
+             rdfs:subClassOf <https://w3id.org/circularfactory/Core#Resource> ;
+             rdfs:label "RobotSensor" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#Sensor
+:Sensor rdf:type owl:Class .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#SensorData
+:SensorData rdf:type owl:Class ;
+            rdfs:subClassOf <https://w3id.org/circularfactory/Core#Measurement> ,
+                            :Data ;
+            rdfs:label "Sensor Data" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#SimulationEnvironment
+:SimulationEnvironment rdf:type owl:Class ;
+                       rdfs:subClassOf :Environment ;
+                       rdfs:label "Simulation Environment" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#SimulationSystem
+:SimulationSystem rdf:type owl:Class ;
+                  rdfs:comment "Interface to simulation environmnet." ;
+                  rdfs:label "Simulation System" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#TargetGripperPose
+:TargetGripperPose rdf:type owl:Class ;
+                   rdfs:subClassOf :GripperPose ;
+                   rdfs:comment "A prediction of a gripper pose, as for example a result of a neural network grasp prediction model." ;
+                   rdfs:label "Gripper Pose" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#TrainingSystem
+:TrainingSystem rdf:type owl:Class ;
+                rdfs:comment "Architecture for training neural network model." ;
+                rdfs:label "Training System" .
+
+
+###  https://w3id.org/circularfactory/ManipulationSystem#Workspace
+:Workspace rdf:type owl:Class ;
+           rdfs:subClassOf <https://w3id.org/circularfactory/Core#Location> ;
+           rdfs:comment "Operational area within an Environment" ;
+           rdfs:label "Workspace" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://orcid.org/0000-0002-3704-9567
+<https://orcid.org/0000-0002-3704-9567> rdf:type owl:NamedIndividual ,
+                                                 <http://xmlns.com/foaf/0.1/Person> ;
+                                        <http://xmlns.com/foaf/0.1/name> "Jan-Felix Klein" .
+
+
+###  https://orcid.org/0000-0003-3544-8203
+<https://orcid.org/0000-0003-3544-8203> rdf:type owl:NamedIndividual ,
+                                                 <http://xmlns.com/foaf/0.1/Person> ;
+                                        <http://xmlns.com/foaf/0.1/name> "Rosa Petra Wolf" .
+
+
+###  https://orcid.org/0009-0007-3713-7739
+<https://orcid.org/0009-0007-3713-7739> rdf:type owl:NamedIndividual ,
+                                                 <http://xmlns.com/foaf/0.1/Person> ;
+                                        <http://xmlns.com/foaf/0.1/name> "Yitian Shi" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
