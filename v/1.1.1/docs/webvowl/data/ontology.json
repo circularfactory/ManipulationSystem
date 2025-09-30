@@ -25,17 +25,17 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
+        "value" : "https://orcid.org/0000-0003-3544-8203",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
         "value" : "https://orcid.org/0000-0002-3704-9567",
         "type" : "iri"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
         "value" : "https://orcid.org/0009-0007-3713-7739",
-        "type" : "iri"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "https://orcid.org/0000-0003-3544-8203",
         "type" : "iri"
       } ],
       "created" : [ {
@@ -60,7 +60,7 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "3",
+    "id" : "0",
     "type" : "owl:Class"
   }, {
     "id" : "4",
@@ -117,7 +117,7 @@
     "id" : "32",
     "type" : "owl:Class"
   }, {
-    "id" : "44",
+    "id" : "43",
     "type" : "owl:Class"
   }, {
     "id" : "41",
@@ -126,7 +126,7 @@
     "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "1",
+    "id" : "2",
     "type" : "owl:Class"
   }, {
     "id" : "6",
@@ -138,7 +138,7 @@
     "id" : "47",
     "type" : "owl:Class"
   }, {
-    "id" : "36",
+    "id" : "37",
     "type" : "owl:Class"
   }, {
     "id" : "14",
@@ -156,13 +156,13 @@
     "id" : "48",
     "type" : "owl:Class"
   }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
     "id" : "25",
     "type" : "owl:Class"
   }, {
-    "id" : "26",
-    "type" : "owl:Class"
-  }, {
-    "id" : "2",
+    "id" : "3",
     "type" : "owl:Class"
   }, {
     "id" : "50",
@@ -179,7 +179,7 @@
     "comment" : {
       "undefined" : "Vision part of grasp learning system responsible for object detection."
     },
-    "id" : "3"
+    "id" : "0"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#Location",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -230,7 +230,7 @@
       "IRI-based" : "Data",
       "undefined" : "Data"
     },
-    "subClasses" : [ "1", "18" ],
+    "subClasses" : [ "2", "18" ],
     "comment" : {
       "undefined" : "A generic data class, that will be more detailed in the future to handle specific and different data types and uncertainties"
     },
@@ -288,7 +288,7 @@
       "IRI-based" : "Environment",
       "undefined" : "Environment"
     },
-    "subClasses" : [ "26", "28" ],
+    "subClasses" : [ "25", "28" ],
     "id" : "27"
   }, {
     "iri" : "https://w3id.org/circularfactory/IntralogisticSystem#ManipulationTask",
@@ -414,7 +414,7 @@
     "id" : "20"
   }, {
     "instances" : 0,
-    "union" : [ "3", "10", "48", "25", "39", "47" ],
+    "union" : [ "0", "10", "48", "24", "39", "47" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "32"
   }, {
@@ -424,7 +424,7 @@
     "label" : {
       "IRI-based" : "Sensor"
     },
-    "id" : "44"
+    "id" : "43"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#Component",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -455,7 +455,7 @@
     "comment" : {
       "undefined" : "Prorioceptive data from a robot, such as joint configurations"
     },
-    "id" : "1",
+    "id" : "2",
     "superClasses" : [ "17", "50" ]
   }, {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#Workspace",
@@ -503,7 +503,7 @@
       "IRI-based" : "ManipulatorModule"
     },
     "attributes" : [ "external" ],
-    "id" : "36"
+    "id" : "37"
   }, {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#RobotSensor",
     "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
@@ -569,7 +569,7 @@
     "comment" : {
       "undefined" : "Interface to simulation environmnet."
     },
-    "id" : "25"
+    "id" : "24"
   }, {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#SimulationEnvironment",
     "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
@@ -578,7 +578,7 @@
       "IRI-based" : "SimulationEnvironment",
       "undefined" : "Simulation Environment"
     },
-    "id" : "26",
+    "id" : "25",
     "superClasses" : [ "27" ]
   }, {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#RobotArmState",
@@ -591,7 +591,7 @@
     "comment" : {
       "undefined" : "Current joint angles of the robotic arm."
     },
-    "id" : "2"
+    "id" : "3"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#Measurement",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -599,12 +599,12 @@
     "label" : {
       "IRI-based" : "Measurement"
     },
-    "subClasses" : [ "1", "18" ],
+    "subClasses" : [ "2", "18" ],
     "attributes" : [ "external" ],
     "id" : "50"
   } ],
   "property" : [ {
-    "id" : "0",
+    "id" : "1",
     "type" : "owl:objectProperty"
   }, {
     "id" : "19",
@@ -613,7 +613,7 @@
     "id" : "23",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "24",
+    "id" : "26",
     "type" : "owl:objectProperty"
   }, {
     "id" : "29",
@@ -631,7 +631,7 @@
     "id" : "35",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "37",
+    "id" : "36",
     "type" : "owl:objectProperty"
   }, {
     "id" : "40",
@@ -640,7 +640,7 @@
     "id" : "42",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "43",
+    "id" : "44",
     "type" : "owl:objectProperty"
   }, {
     "id" : "45",
@@ -748,17 +748,17 @@
   "propertyAttribute" : [ {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#containsRobotArmState",
     "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
-    "range" : "2",
+    "range" : "3",
     "label" : {
       "IRI-based" : "containsRobotArmState",
       "undefined" : "contains robot arm state"
     },
-    "domain" : "1",
+    "domain" : "2",
     "comment" : {
       "undefined" : "A Robot Data instance contains the current state of the robotic arm."
     },
     "attributes" : [ "object" ],
-    "id" : "0"
+    "id" : "1"
   }, {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#containsGripperAperture",
     "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
@@ -774,6 +774,20 @@
     "attributes" : [ "object" ],
     "id" : "19"
   }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#createsSimEnvironment",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "createsSimEnvironment",
+      "undefined" : "creates simulation environmemt"
+    },
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "A simulation system creates a simulation environment."
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#hasRobotGripper",
     "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
     "range" : "8",
@@ -786,21 +800,7 @@
       "undefined" : "Manipulator is equipped with a robotic gripper."
     },
     "attributes" : [ "object" ],
-    "id" : "23"
-  }, {
-    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#createsSimEnvironment",
-    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
-    "range" : "26",
-    "label" : {
-      "IRI-based" : "createsSimEnvironment",
-      "undefined" : "creates simulation environmemt"
-    },
-    "domain" : "25",
-    "comment" : {
-      "undefined" : "A simulation system creates a simulation environment."
-    },
-    "attributes" : [ "object" ],
-    "id" : "24"
+    "id" : "26"
   }, {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#containsOrientation",
     "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
@@ -858,20 +858,6 @@
     "attributes" : [ "object" ],
     "id" : "33"
   }, {
-    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#hasManipulator",
-    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
-    "range" : "13",
-    "label" : {
-      "IRI-based" : "hasManipulator",
-      "undefined" : "has manipulator"
-    },
-    "domain" : "36",
-    "comment" : {
-      "undefined" : "Manipulator Module is equipped with a manipulator."
-    },
-    "attributes" : [ "object" ],
-    "id" : "35"
-  }, {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#hasGripperPose",
     "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
     "range" : "20",
@@ -884,7 +870,21 @@
       "undefined" : "A gripper has a pose (position, orientation, gripper aperture)."
     },
     "attributes" : [ "object" ],
-    "id" : "37"
+    "id" : "35"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#hasManipulator",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasManipulator",
+      "undefined" : "has manipulator"
+    },
+    "domain" : "37",
+    "comment" : {
+      "undefined" : "Manipulator Module is equipped with a manipulator."
+    },
+    "attributes" : [ "object" ],
+    "id" : "36"
   }, {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#locates",
     "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
@@ -893,16 +893,27 @@
       "IRI-based" : "locates",
       "undefined" : "is located by"
     },
-    "domain" : "3",
+    "domain" : "0",
     "comment" : {
       "undefined" : "The target object or location of a manipulation task is located by an object detection system."
     },
     "attributes" : [ "object" ],
     "id" : "40"
   }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#capturesSensorData",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "capturesSensorData",
+      "undefined" : "captures sensor data"
+    },
+    "domain" : "43",
+    "attributes" : [ "object" ],
+    "id" : "42"
+  }, {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#hasRobotArmState",
     "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
-    "range" : "2",
+    "range" : "3",
     "label" : {
       "IRI-based" : "hasRobotArmState",
       "undefined" : "has robot arm state"
@@ -912,18 +923,7 @@
       "undefined" : "A robotic arm has specific joint configurations."
     },
     "attributes" : [ "object" ],
-    "id" : "42"
-  }, {
-    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#capturesSensorData",
-    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
-    "range" : "18",
-    "label" : {
-      "IRI-based" : "capturesSensorData",
-      "undefined" : "captures sensor data"
-    },
-    "domain" : "44",
-    "attributes" : [ "object" ],
-    "id" : "43"
+    "id" : "44"
   }, {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#generatesTrajectory",
     "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
@@ -954,53 +954,53 @@
     "id" : "46"
   }, {
     "range" : "50",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "49"
   }, {
     "range" : "20",
     "domain" : "34",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "51"
   }, {
     "range" : "50",
     "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "52"
   }, {
     "range" : "27",
-    "domain" : "26",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "53"
   }, {
     "range" : "17",
     "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "54"
   }, {
     "range" : "16",
     "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "55"
   }, {
     "range" : "27",
     "domain" : "28",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "56"
   }, {
     "range" : "9",
     "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "57"
   }, {
     "range" : "17",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "59"
   }, {
     "range" : "9",
     "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "60"
   }, {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#generatesGripperPose",
@@ -1033,52 +1033,38 @@
   }, {
     "range" : "4",
     "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "63"
   }, {
     "range" : "4",
     "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "64"
   }, {
     "range" : "4",
     "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "65"
   }, {
     "range" : "9",
     "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "66"
   }, {
     "range" : "9",
     "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "67"
   }, {
     "range" : "9",
     "domain" : "8",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "68"
   }, {
     "range" : "9",
     "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "69"
-  }, {
-    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#hasRobotArm",
-    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
-    "range" : "12",
-    "label" : {
-      "IRI-based" : "hasRobotArm",
-      "undefined" : "has robot arm"
-    },
-    "domain" : "13",
-    "comment" : {
-      "undefined" : "A Manipulator has a robot arm."
-    },
-    "attributes" : [ "object" ],
-    "id" : "70"
   }, {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#hasInitialGripperPose",
     "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
@@ -1090,6 +1076,20 @@
     "domain" : "22",
     "comment" : {
       "undefined" : "A motion planner gets an initial gripper pose, as the starting pose of the trajectory."
+    },
+    "attributes" : [ "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#hasRobotArm",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasRobotArm",
+      "undefined" : "has robot arm"
+    },
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "A Manipulator has a robot arm."
     },
     "attributes" : [ "object" ],
     "id" : "71"
@@ -1108,14 +1108,14 @@
     "attributes" : [ "object" ],
     "id" : "72"
   }, {
-    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
-    "range" : "20",
+    "range" : "15",
     "label" : {
-      "IRI-based" : "first"
+      "IRI-based" : "rest"
     },
     "domain" : "15",
-    "attributes" : [ "allValues", "external", "object" ],
+    "attributes" : [ "external", "object", "allValues" ],
     "id" : "73"
   }, {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#containsGripperPose",
@@ -1125,21 +1125,21 @@
       "IRI-based" : "containsGripperPose",
       "undefined" : "contains gripper pose"
     },
-    "domain" : "1",
+    "domain" : "2",
     "comment" : {
       "undefined" : "A Robot Data instance contains the current pose of the gripper."
     },
     "attributes" : [ "object" ],
     "id" : "74"
   }, {
-    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
-    "range" : "15",
+    "range" : "20",
     "label" : {
-      "IRI-based" : "rest"
+      "IRI-based" : "first"
     },
     "domain" : "15",
-    "attributes" : [ "allValues", "external", "object" ],
+    "attributes" : [ "external", "object", "allValues" ],
     "id" : "75"
   }, {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#containsPosition",
@@ -1158,7 +1158,7 @@
   }, {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#hasSensor",
     "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
-    "range" : "44",
+    "range" : "43",
     "label" : {
       "IRI-based" : "hasSensor",
       "undefined" : "has sensor"
