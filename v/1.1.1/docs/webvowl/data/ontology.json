@@ -25,12 +25,12 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://orcid.org/0000-0003-3544-8203",
+        "value" : "https://orcid.org/0000-0002-3704-9567",
         "type" : "iri"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://orcid.org/0000-0002-3704-9567",
+        "value" : "https://orcid.org/0000-0003-3544-8203",
         "type" : "iri"
       }, {
         "identifier" : "creator",
@@ -141,10 +141,10 @@
     "id" : "37",
     "type" : "owl:Class"
   }, {
-    "id" : "14",
+    "id" : "28",
     "type" : "owl:Class"
   }, {
-    "id" : "28",
+    "id" : "14",
     "type" : "owl:Class"
   }, {
     "id" : "21",
@@ -415,7 +415,7 @@
   }, {
     "instances" : 0,
     "union" : [ "0", "10", "48", "24", "39", "47" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "32"
   }, {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#Sensor",
@@ -505,16 +505,6 @@
     "attributes" : [ "external" ],
     "id" : "37"
   }, {
-    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#RobotSensor",
-    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "RobotSensor",
-      "undefined" : "RobotSensor"
-    },
-    "id" : "14",
-    "superClasses" : [ "9" ]
-  }, {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#RealWorldEnvironment",
     "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
     "instances" : 0,
@@ -524,6 +514,16 @@
     },
     "id" : "28",
     "superClasses" : [ "27" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/ManipulationSystem#RobotSensor",
+    "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RobotSensor",
+      "undefined" : "RobotSensor"
+    },
+    "id" : "14",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#GripperAperture",
     "baseIri" : "https://w3id.org/circularfactory/ManipulationSystem",
@@ -1108,14 +1108,14 @@
     "attributes" : [ "object" ],
     "id" : "72"
   }, {
-    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
-    "range" : "15",
+    "range" : "20",
     "label" : {
-      "IRI-based" : "rest"
+      "IRI-based" : "first"
     },
     "domain" : "15",
-    "attributes" : [ "external", "object", "allValues" ],
+    "attributes" : [ "allValues", "object", "external" ],
     "id" : "73"
   }, {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#containsGripperPose",
@@ -1132,14 +1132,14 @@
     "attributes" : [ "object" ],
     "id" : "74"
   }, {
-    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
-    "range" : "20",
+    "range" : "15",
     "label" : {
-      "IRI-based" : "first"
+      "IRI-based" : "rest"
     },
     "domain" : "15",
-    "attributes" : [ "external", "object", "allValues" ],
+    "attributes" : [ "allValues", "object", "external" ],
     "id" : "75"
   }, {
     "iri" : "https://w3id.org/circularfactory/ManipulationSystem#containsPosition",
